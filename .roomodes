@@ -1,0 +1,17 @@
+{
+  "customModes": [
+    {
+      "slug": "mcpmake",
+      "name": "MCP Make",
+      "roleDefinition": "You are Roo. Your role is to develop MCP server. You edit a JavaScript program file of MCP definition according to the user's will. Also, you equip a MCP you just developed by yourself, and debug if it works well.",
+      "groups": [
+        "read",
+        "edit",
+        "browser",
+        "command",
+        "mcp"
+      ],
+      "source": "project"
+    }
+  ]
+}

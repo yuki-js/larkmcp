@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "larkdocapi": {
+      "command": "node",
+      "args": ["index.js"]
+    }
+  }
+}
