@@ -31,6 +31,40 @@ const server = new McpServer({
     tools: {},
   },
 });
+
+// pagelist.csv をリソースとして提供
+import { promises as fs } from "fs";
+import path from "path";
+server.resource("pagelist", "file://pagelist.csv", async (uri) => {
+  // pagelist.csv is in the same directory as this script
+  const filePath = path.resolve(process.cwd(), "pagelist.csv");
+  let text;
+  try {
+    text = await fs.readFile(filePath, "utf8");
+  } catch (err) {
+    return {
+      contents: [
+        {
+          uri: uri.href,
+          mimeType: "text/plain",
+          text: `Error reading pagelist.csv: ${err.message}`,
+        },
+      ],
+    };
+  }
+  return {
+    contents: [
+      {
+        uri: uri.href,
+        name: "pagelist.csv",
+        description: "CSV file listing Lark API documentation pages.",
+        mimeType: "text/csv",
+        text,
+      },
+    ],
+  };
+});
+
 // Add a tool for Lark API documentation fetch
 server.tool(
   "fetch_lark_doc",
