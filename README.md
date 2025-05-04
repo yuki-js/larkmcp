@@ -10,7 +10,7 @@ Designed for seamless integration with LLMs, automation agents, and advanced dev
 You can run the MCP server directly via npx (after publishing to npm):
 
 ```sh
-npx larkmcp
+npx @yuki-js/larkmcp
 ```
 
 ---
@@ -56,7 +56,7 @@ npx larkmcp
 ```bash
 git clone https://github.com/yuki-js/larkmcp.git
 cd larkmcp
-npm install
+npm install @yuki-js/larkmcp
 ```
 
 ### Running the MCP Server

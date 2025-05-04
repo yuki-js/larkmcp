@@ -1,5 +1,5 @@
 {
-  "name": "larkmcp",
+  "name": "@yuki-js/larkmcp",
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
@@ -9,10 +9,31 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "lark",
+    "mcp",
+    "automation",
+    "sdk"
+  ],
+  "author": "Yuki Aoki",
   "license": "ISC",
-  "description": "",
+  "description": "Lark MCP integration tools and utilities.",
+  "files": [
+    "index.js",
+    "server/",
+    "utils/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuki-js/larkmcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuki-js/larkmcp/issues"
+  },
+  "homepage": "https://github.com/yuki-js/larkmcp#readme",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.11.0",
     "zod": "^3.24.3"

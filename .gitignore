@@ -1,1 +1,5 @@
-.roo/mcp.json
+node_modules/
+data/
+.roo/
+.roomodes
+*.log

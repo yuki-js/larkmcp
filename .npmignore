@@ -1,0 +1,10 @@
+# 除外したいファイル・ディレクトリ
+data/
+*.log
+*.csv
+*.md
+test/
+tests/
+node_modules/
+.roomodes
+.roo/
