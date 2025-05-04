@@ -1,9 +1,20 @@
 # LarkMCP
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@yuki-js/larkmcp.svg)](https://www.npmjs.com/package/@yuki-js/larkmcp)
 
 A powerful Model Context Protocol (MCP) server that exposes Lark OpenAPI documentation and API endpoints as structured, machine-consumable resources and tools.  
 Designed for seamless integration with LLMs, automation agents, and advanced developer workflows.
+
+## Feishu（飞书）対応
+
+- 環境変数 `LARK_ORIGIN` を `feishu` に設定することで、Lark（グローバル）だけでなく Feishu（中国版）API・ドキュメントにも対応できます。
+- OAuth 認証・API リクエスト・ドキュメント取得時に自動的に `open.feishu.cn` ドメインや中国語リソースを利用します。
+- 例: Feishu で起動する場合
+  ```sh
+  LARK_ORIGIN=feishu node index.js
+  ```
+- デフォルト（Lark グローバル）は `LARK_ORIGIN` を省略または `lark` にしてください。
 
 ## Usage
 

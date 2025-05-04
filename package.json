@@ -1,6 +1,6 @@
 {
   "name": "@yuki-js/larkmcp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "bin": {
     "larkmcp": "./index.js"
