@@ -1,9 +1,9 @@
 {
-  "name": "lark-openapi-docs-mcp",
+  "name": "larkmcp",
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
-    "larkdocapi": "./index.js"
+    "larkmcp": "./index.js"
   },
   "type": "module",
   "scripts": {

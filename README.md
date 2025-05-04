@@ -1,9 +1,17 @@
-# Lark OpenAPI Docs MCP
+# LarkMCP
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
 
 A powerful Model Context Protocol (MCP) server that exposes Lark OpenAPI documentation and API endpoints as structured, machine-consumable resources and tools.  
 Designed for seamless integration with LLMs, automation agents, and advanced developer workflows.
+
+## Usage
+
+You can run the MCP server directly via npx (after publishing to npm):
+
+```sh
+npx larkmcp
+```
 
 ---
 
@@ -46,8 +54,8 @@ Designed for seamless integration with LLMs, automation agents, and advanced dev
 ### Installation
 
 ```bash
-git clone https://github.com/your-org/lark-openapi-docs-mcp.git
-cd lark-openapi-docs-mcp
+git clone https://github.com/yuki-js/larkmcp.git
+cd larkmcp
 npm install
 ```
 
