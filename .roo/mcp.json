@@ -2,7 +2,12 @@
   "mcpServers": {
     "larkdocapi": {
       "command": "node",
-      "args": ["index.js"]
+      "args": [
+        "index.js"
+      ],
+      "alwaysAllow": [
+        "fetch_lark_doc"
+      ]
     }
   }
 }

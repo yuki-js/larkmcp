@@ -32,26 +32,7 @@ const server = new McpServer({
   },
 });
 
-// pagelist.csv をリソースとして提供
-import { promises as fs } from "fs";
-import path from "path";
-server.resource("pagelist", "file://pagelist.csv", async (uri) => {
-  // pagelist.csv is in the same directory as this script
-  const filePath = path.resolve(process.cwd(), "pagelist.csv");
-  let text;
-  try {
-    text = await fs.readFile(filePath, "utf8");
-  } catch (err) {
-    return {
-      contents: [
-        {
-          uri: uri.href,
-          mimeType: "text/plain",
-          text: `Error reading pagelist.csv: ${err.message}`,
-        },
-      ],
-    };
-  }
+server.resource("pagelist", "file://pagelist.csv/", async (uri) => {
   return {
     contents: [
       {
@@ -59,7 +40,73 @@ server.resource("pagelist", "file://pagelist.csv", async (uri) => {
         name: "pagelist.csv",
         description: "CSV file listing Lark API documentation pages.",
         mimeType: "text/csv",
-        text,
+        text: `
+ページ名,URL
+Docs Overview,/server-docs/docs/docs-overview
+Docs Overview and Best Practice,/server-docs/docs/docs-faq
+Document overview,/server-docs/docs/docs/docx-v1/docx-overview
+Document FAQs,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/faq
+Document,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/data-structure/document
+Block,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/data-structure/block
+Emoji,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/emoji
+Create Document,/server-docs/docs/docs/docx-v1/document/create
+Query Document,/server-docs/docs/docs/docx-v1/document/get
+Query Document Raw Content,/server-docs/docs/docs/docx-v1/document/raw_content
+Query All Blocks,/server-docs/docs/docs/docx-v1/document/list
+Create Block,/server-docs/docs/docs/docx-v1/document-block/create
+Create nested blocks,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/document-block-descendant/create
+Update Block,/server-docs/docs/docs/docx-v1/document-block/patch
+Query Block,/server-docs/docs/docs/docx-v1/document-block/get
+Query Block Children,/server-docs/docs/docs/docx-v1/document-block/get-2
+Batch Update Blocks,/server-docs/docs/docs/docx-v1/document-block/batch_update
+Delete Blocks,/server-docs/docs/docs/docx-v1/document-block/batch_delete
+Upgraded Docs OpenAPI Access Guide,/server-docs/docs/docs/upgraded-docs-openapi-access-guide
+Overview,/server-docs/docs/bitable-v1/bitable-overview
+Base Data Structure Overview,/server-docs/docs/bitable-v1/bitable-structure
+Copy App,/server-docs/docs/bitable-v1/app/copy
+Create App,/server-docs/docs/bitable-v1/app/create
+Get App Info,/server-docs/docs/bitable-v1/app/get
+Update App Name,/server-docs/docs/bitable-v1/app/update
+Create table,/server-docs/docs/bitable-v1/app-table/create
+Batch create table,/server-docs/docs/bitable-v1/app-table/batch_create
+Delete Table,/server-docs/docs/bitable-v1/app-table/delete
+Batch delete table,/server-docs/docs/bitable-v1/app-table/batch_delete
+Update data table,/server-docs/docs/bitable-v1/app-table/patch
+List all tables,/server-docs/docs/bitable-v1/app-table/list
+Update View,/server-docs/docs/bitable-v1/app-table-view/patch
+Get View,/server-docs/docs/bitable-v1/app-table-view/get
+List Views,/server-docs/docs/bitable-v1/app-table-view/list
+Add View,/server-docs/docs/bitable-v1/app-table-view/create
+Delete View,/server-docs/docs/bitable-v1/app-table-view/delete
+Record filter development guide,/server-docs/docs/bitable-v1/app-table-record/filter
+Record filter guide,/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/record-filter-guide
+Base Record Data Structure Overview,/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/bitable-record-data-structure-overview
+Get records,/server-docs/docs/bitable-v1/app-table-record/get
+List records,/server-docs/docs/bitable-v1/app-table-record/list
+search records,/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/search
+Create a record,/server-docs/docs/bitable-v1/app-table-record/create
+Update a record,/server-docs/docs/bitable-v1/app-table-record/update
+Delete a record,/server-docs/docs/bitable-v1/app-table-record/delete
+Create records,/server-docs/docs/bitable-v1/app-table-record/batch_create
+Update records,/server-docs/docs/bitable-v1/app-table-record/batch_update
+Delete records,/server-docs/docs/bitable-v1/app-table-record/batch_delete
+Field edit development guide,/server-docs/docs/bitable-v1/app-table-field/guide
+Attachment Field,/server-docs/docs/bitable-v1/app-table-field/attachment
+List fields,/server-docs/docs/bitable-v1/app-table-field/list
+Create field,/server-docs/docs/bitable-v1/app-table-field/create
+Update field,/server-docs/docs/bitable-v1/app-table-field/update
+Delete field,/server-docs/docs/bitable-v1/app-table-field/delete
+Base Overview,/server-docs/docs/bitable-v1/notification
+Get Document Comments in Pages,/server-docs/docs/drive-v1/CommentAPI/list
+Batch Query Comments,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-comment/batch_query
+Solve or Restore a Comment,/server-docs/docs/drive-v1/CommentAPI/patch
+Add a Global Comment,/server-docs/docs/drive-v1/CommentAPI/create
+Get a Global Comment,/server-docs/docs/drive-v1/CommentAPI/get
+Get Replies List,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-comment-reply/list
+Update Reply,/server-docs/docs/drive-v1/CommentAPI/update
+Delete Reply,/server-docs/docs/drive-v1/CommentAPI/delete
+Subscribe to Events,/server-docs/docs/events
+`,
       },
     ],
   };
