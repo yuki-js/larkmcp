@@ -6,16 +6,17 @@
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { registerLarkDocIndexResource } from "./resources/larkDocIndex.js";
+
 import { registerFetchLarkDocTool } from "./tools/fetchLarkDoc.js";
 import { registerLoginUserTool } from "./tools/loginUser.js";
 import { registerTestLarkApiTool } from "./tools/testLarkApi.js";
+import { registerFetchLarkDocIndexTool } from "./tools/fetchLarkDocIndex.js";
 
 /**
  * Creates and configures the MCP server.
  * @returns {McpServer}
  */
-export async function createMcpServer() {
+export function createMcpServer() {
   const server = new McpServer({
     name: "Lark API Documentation MCP",
     description:
@@ -27,11 +28,10 @@ export async function createMcpServer() {
     },
   });
 
-  // Register resources and tools
-  await registerLarkDocIndexResource(server);
   registerFetchLarkDocTool(server);
   registerLoginUserTool(server);
   registerTestLarkApiTool(server);
+  registerFetchLarkDocIndexTool(server);
 
   return server;
 }
@@ -40,7 +40,7 @@ export async function createMcpServer() {
  * Starts the MCP server with stdio transport.
  */
 export async function startServer() {
-  const server = await createMcpServer();
+  const server = createMcpServer();
   const transport = new StdioServerTransport();
   await server.connect(transport);
 }
