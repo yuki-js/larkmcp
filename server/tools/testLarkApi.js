@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { getOAuthConfig } from "../service/loginUser/OAuthConfig.js";
 
 /**
  * Registers the testLarkApi tool on the MCP server.
@@ -33,7 +34,10 @@ export function registerTestLarkApiTool(server) {
           ],
         };
       }
-      const apiUrl = `https://open.larksuite.com${endpoint}`;
+      const origin = getOAuthConfig().origin;
+      const baseDomain =
+        origin === "feishu" ? "open.feishu.cn" : "open.larksuite.com";
+      const apiUrl = `https://${baseDomain}${endpoint}`;
       let response, json, text;
       try {
         response = await fetch(apiUrl, {
@@ -57,7 +61,10 @@ export function registerTestLarkApiTool(server) {
           content: [
             {
               type: "text",
-              text: "Failed to call Lark API: " + String(err),
+              text:
+                `Failed to call ${
+                  origin === "feishu" ? "Feishu" : "Lark"
+                } API: ` + String(err),
             },
           ],
         };

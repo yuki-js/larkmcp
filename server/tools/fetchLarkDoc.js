@@ -1,5 +1,6 @@
 import { z } from "zod";
 import removeKeysDeep from "../../utils/removeKeysDeep.js";
+import { getOAuthConfig } from "../service/loginUser/OAuthConfig.js";
 
 /**
  * Registers the fetchLarkDoc tool on the MCP server.
@@ -19,12 +20,18 @@ export function registerFetchLarkDocTool(server) {
     async ({ url }) => {
       // Extract the fullPath from the human URL or accept a path directly
       let fullPath = null;
+      let origin = "lark";
+      try {
+        origin = getOAuthConfig().origin;
+      } catch {}
       try {
         // If it's a full URL, extract the path after /document/
-        const m = url.match(/open\.larksuite\.com\/document\/([^?]+)/);
+        const m = url.match(
+          /open\.(larksuite\.com|feishu\.cn)\/document\/([^?]+)/
+        );
         if (m) {
-          // m[1] is the path part, may or may not start with /
-          fullPath = m[1].startsWith("/") ? m[1] : "/" + m[1];
+          // m[2] is the path part, may or may not start with /
+          fullPath = m[2].startsWith("/") ? m[2] : "/" + m[2];
         } else if (url.startsWith("/")) {
           fullPath = url;
         } else {
@@ -36,8 +43,10 @@ export function registerFetchLarkDocTool(server) {
         fullPath = "/" + url;
       }
 
-      // Lark Document Fetch API endpoint for LLMs
-      const apiUrl = `https://open.larksuite.com/document_portal/v1/document/get_detail?fullPath=${encodeURIComponent(
+      // Lark/Feishu Document Fetch API endpoint for LLMs
+      const baseDomain =
+        origin === "feishu" ? "open.feishu.cn" : "open.larksuite.com";
+      const apiUrl = `https://${baseDomain}/document_portal/v1/document/get_detail?fullPath=${encodeURIComponent(
         fullPath
       )}`;
       let response;
@@ -45,11 +54,14 @@ export function registerFetchLarkDocTool(server) {
       try {
         response = await fetch(apiUrl, {
           headers: {
-            "Accept-Language": "en-US",
+            "Accept-Language": origin === "feishu" ? "zh-CN" : "en-US",
             Accept: "application/json",
             "User-Agent":
               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
-            Cookie: "open_locale=en-US; open_locale=en-US",
+            Cookie:
+              origin === "feishu"
+                ? "open_locale=zh-CN; open_locale=zh-CN"
+                : "open_locale=en-US; open_locale=en-US",
           },
         });
         json = await response.json();
@@ -60,7 +72,9 @@ export function registerFetchLarkDocTool(server) {
             {
               type: "text",
               text: JSON.stringify({
-                error: "Failed to fetch from Lark Document API",
+                error: `Failed to fetch from ${
+                  origin === "feishu" ? "Feishu" : "Lark"
+                } Document API`,
                 detail: String(err),
                 docPath: fullPath,
                 docApiUrl: apiUrl,
@@ -78,7 +92,9 @@ export function registerFetchLarkDocTool(server) {
             {
               type: "text",
               text: JSON.stringify({
-                error: "Lark Document API returned error",
+                error: `${
+                  origin === "feishu" ? "Feishu" : "Lark"
+                } Document API returned error`,
                 status: response.status,
                 statusText: response.statusText,
                 apiError: json,
@@ -116,11 +132,14 @@ export function registerFetchLarkDocTool(server) {
             type: "text",
             text: JSON.stringify({
               _mcp_tool_info: {
-                description:
-                  "This is the raw JSON documentation data for a Lark API doc page, fetched from the Lark Document Portal API. The 'fullPath' parameter is the path part of the human-facing Lark doc URL. See https://open.larksuite.com/document/server-docs/docs/docs/docx-v1/document/list for details.",
+                description: `This is the raw JSON documentation data for a ${
+                  origin === "feishu" ? "Feishu" : "Lark"
+                } API doc page, fetched from the ${
+                  origin === "feishu" ? "Feishu" : "Lark"
+                } Document Portal API. The 'fullPath' parameter is the path part of the human-facing doc URL.`,
                 docPath: fullPath,
                 docApiUrl: apiUrl,
-                humanDocUrl: "https://open.larksuite.com/document/" + fullPath,
+                humanDocUrl: `https://${baseDomain}/document/` + fullPath,
                 note: "The structure of the JSON is not fixed. LLMs should process and interpret the fields as needed.",
               },
               ...json,

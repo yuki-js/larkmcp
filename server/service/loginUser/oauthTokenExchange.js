@@ -5,8 +5,9 @@
  * @returns {Promise<object>} { user_access_token, expires_in, refresh_token, open_id, union_id } or { isError, content }
  */
 export async function exchangeCodeForToken(code, config) {
-  const tokenUrl =
-    "https://open.larksuite.com/open-apis/authen/v1/access_token";
+  const baseDomain =
+    config.origin === "feishu" ? "open.feishu.cn" : "open.larksuite.com";
+  const tokenUrl = `https://${baseDomain}/open-apis/authen/v1/access_token`;
   let response, json;
   try {
     response = await fetch(tokenUrl, {
@@ -29,7 +30,7 @@ export async function exchangeCodeForToken(code, config) {
       content: [
         {
           type: "text",
-          text: "Failed to exchange code for token: " + String(err),
+          text: `Failed to exchange code for token: ${String(err)}`,
         },
       ],
     };
@@ -40,7 +41,10 @@ export async function exchangeCodeForToken(code, config) {
       content: [
         {
           type: "text",
-          text: "Lark OAuth API error: " + JSON.stringify(json),
+          text:
+            `${
+              config.origin === "feishu" ? "Feishu" : "Lark"
+            } OAuth API error: ` + JSON.stringify(json),
         },
       ],
     };
