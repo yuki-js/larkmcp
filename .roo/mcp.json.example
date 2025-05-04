@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "larkdocapi": {
+      "command": "node",
+      "args": ["/home/user/codes/yuki-js/lark-openapi-docs-mcp/index.js"],
+      "alwaysAllow": ["fetch_lark_doc"],
+      "cwd": "/home/user/codes/yuki-js/lark-openapi-docs-mcp",
+      "env": {
+        "LARK_APP_ID": "your_app_id",
+        "LARK_APP_SECRET": "your_app_secret",
+        "LARK_REDIRECT_URI": "your_tenant_key"
+      }
+    }
+  }
+}
