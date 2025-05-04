@@ -1,6 +1,6 @@
 // loginUser.js - MCPツール登録エントリポイント
 import { z } from "zod";
-import { registerLoginUserToolHandler } from "../../service/loginUser/loginUserToolHandler.js";
+import { registerLoginUserToolHandler } from "../service/loginUser/loginUserToolHandler.js";
 
 /**
  * Registers the loginUser tool on the MCP server.

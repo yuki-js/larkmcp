@@ -6,8 +6,12 @@ import path from "path";
  * @param {McpServer} server - The MCP server instance.
  */
 export async function registerLarkDocIndexResource(server) {
-  const csvPath = path.resolve(
-    "data/a-full-list-of-available-lark-document.csv"
+  const csvPath = path.join(
+    path.dirname(import.meta.url.replace("file://", "")),
+    "..",
+    "..",
+    "data",
+    "a-full-list-of-available-lark-document.csv"
   );
   const csvText = await fs.readFile(csvPath, "utf-8");
 
