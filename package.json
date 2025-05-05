@@ -1,6 +1,6 @@
 {
   "name": "@yuki-js/larkmcp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "bin": {
     "larkmcp": "./index.js"
@@ -21,7 +21,8 @@
   "files": [
     "index.js",
     "server/",
-    "utils/"
+    "utils/",
+    "data/"
   ],
   "repository": {
     "type": "git",
