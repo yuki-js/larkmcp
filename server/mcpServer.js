@@ -11,6 +11,7 @@ import { registerFetchLarkDocTool } from "./tools/fetchLarkDoc.js";
 import { registerLoginUserTool } from "./tools/loginUser.js";
 import { registerTestLarkApiTool } from "./tools/testLarkApi.js";
 import { registerFetchLarkDocIndexTool } from "./tools/fetchLarkDocIndex.js";
+import { registerLoginTenantTool } from "./tools/loginTenant.js";
 
 /**
  * Creates and configures the MCP server.
@@ -32,6 +33,7 @@ export function createMcpServer() {
   registerLoginUserTool(server);
   registerTestLarkApiTool(server);
   registerFetchLarkDocIndexTool(server);
+  registerLoginTenantTool(server);
 
   return server;
 }

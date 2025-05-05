@@ -15,7 +15,8 @@ export function registerLoginUserTool(server) {
     "login_user_start",
     `'login_user_start' starts the 3-legged OAuth process. It starts an HTTP server and returns the URL to the user. 
     It can be used to get the user_access_token. user_access_token represents the user who is logged in to Lark. You can use this token to behave as the user.
-    If you don't need to behave as the user, you can use the app_access_token instead, which can be obtained from the login_app tool.`,
+    If you don't need to behave as the user, you can use the tenant_access_token instead, which can be obtained from the login_tenant tool.
+    If the user doesn't request to login as a user, login_tenant tool is preferred over this tool.`,
     loginUserStartHandler
   );
 

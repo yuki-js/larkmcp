@@ -23,13 +23,21 @@ export function registerTestLarkApiTool(server) {
         .describe("Request body for POST/PUT requests (JSON object)"),
     },
     async ({ endpoint, method = "GET", body }) => {
-      if (!global.larkUserAccessToken) {
+      let token = null;
+      let tokenType = null;
+      if (global.larkUserAccessToken) {
+        token = global.larkUserAccessToken;
+        tokenType = "user";
+      } else if (global.larkTenantAccessToken) {
+        token = global.larkTenantAccessToken;
+        tokenType = "tenant";
+      } else {
         return {
           isError: true,
           content: [
             {
               type: "text",
-              text: "No user_access_token found. Please login first using the 'login_user' tool with step='start'.",
+              text: "No user_access_token or tenant_access_token found. Please login first using the 'login_user' tool or 'login_tenant' tool.",
             },
           ],
         };
@@ -43,7 +51,7 @@ export function registerTestLarkApiTool(server) {
         response = await fetch(apiUrl, {
           method,
           headers: {
-            Authorization: `Bearer ${global.larkUserAccessToken}`,
+            Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
             Accept: "application/json",
           },
@@ -80,6 +88,7 @@ export function registerTestLarkApiTool(server) {
               body: json ?? text,
               apiUrl,
               method,
+              token_type: tokenType,
             }),
           },
         ],
