@@ -181,6 +181,32 @@ Once authenticated, call the API:
 
 ---
 
+## Developer Experience
+
+### Recommended VSCode Extensions
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+> 推奨拡張は `.vscode/extensions.json` でも自動提案されます。
+
+### Code Linting & Formatting
+
+- 静的解析:
+  ```sh
+  npm run lint
+  ```
+- コード整形:
+  ```sh
+  npm run format
+  ```
+
+`.eslintrc.json` でESLintルールをカスタマイズできます。
+
+Prettierの設定はプロジェクトで強制していません。各自の好みに合わせて`.prettierrc`を編集・利用してください（デフォルトは空設定です）。
+
+---
+
 ## Development
 
 ### Project Structure
