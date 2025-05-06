@@ -7,7 +7,7 @@ import { getOAuthConfig } from "./OAuthConfig.js";
  * @returns {Promise<object>} Tool result object
  */
 export async function loginTenantHandler() {
-  const { client_id, client_secret, origin } = getOAuthConfig();
+  const { app_id, app_secret, origin } = getOAuthConfig();
   const baseDomain =
     origin === "feishu" ? "open.feishu.cn" : "open.larksuite.com";
   const url = `https://${baseDomain}/open-apis/auth/v3/tenant_access_token/internal`;
@@ -21,8 +21,8 @@ export async function loginTenantHandler() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        app_id: client_id,
-        app_secret: client_secret,
+        app_id,
+        app_secret,
       }),
     });
     text = await response.text();
