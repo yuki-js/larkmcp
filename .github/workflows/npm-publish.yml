@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main # またはデフォルトブランチ名
+
+permissions:
+  contents: write # for creating release tags and releases
+  pull-requests: write # for creating release pull requests
+  id-token: write # for npm provenance
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # このコマンドがバージョンアップ、npm publish、GitHubリリース作成を実行
+          publish: npm run release 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
