@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "npm run version && npm publish --provenance"
+    "release": "npm run version && npm publish --provenance",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "keywords": [
     "lark",
@@ -44,6 +46,9 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.3",
-    "@types/node": "^22.15.3"
+    "@eslint/js": "^9.26.0",
+    "@types/node": "^22.15.3",
+    "eslint": "^9.26.0",
+    "prettier": "^3.5.3"
   }
 }

@@ -14,7 +14,7 @@ export function registerFetchLarkDocTool(server) {
       url: z
         .string()
         .describe(
-          "Human-facing Lark documentation URL (e.g. https://open.larksuite.com/document/server-docs/docs/docs/docx-v1/document/list) or a Lark doc path (e.g. /server-docs/docs/docs/docx-v1/document/list)"
+          "Human-facing Lark documentation URL (e.g. https://open.larksuite.com/document/server-docs/docs/docs/docx-v1/document/list) or a Lark doc path (e.g. /server-docs/docs/docs/docx-v1/document/list)",
         ),
     },
     async ({ url }) => {
@@ -23,11 +23,13 @@ export function registerFetchLarkDocTool(server) {
       let origin = "lark";
       try {
         origin = getOAuthConfig().origin;
-      } catch {}
+      } catch {
+        /* ignore */
+      }
       try {
         // If it's a full URL, extract the path after /document/
         const m = url.match(
-          /open\.(larksuite\.com|feishu\.cn)\/document\/([^?]+)/
+          /open\.(larksuite\.com|feishu\.cn)\/document\/([^?]+)/,
         );
         if (m) {
           // m[2] is the path part, may or may not start with /
@@ -38,7 +40,7 @@ export function registerFetchLarkDocTool(server) {
           // fallback: treat as path, add leading slash
           fullPath = "/" + url;
         }
-      } catch (e) {
+      } catch {
         // fallback: treat as path, add leading slash
         fullPath = "/" + url;
       }
@@ -47,7 +49,7 @@ export function registerFetchLarkDocTool(server) {
       const baseDomain =
         origin === "feishu" ? "open.feishu.cn" : "open.larksuite.com";
       const apiUrl = `https://${baseDomain}/document_portal/v1/document/get_detail?fullPath=${encodeURIComponent(
-        fullPath
+        fullPath,
       )}`;
       let response;
       let json;
@@ -147,6 +149,6 @@ export function registerFetchLarkDocTool(server) {
           },
         ],
       };
-    }
+    },
   );
 }

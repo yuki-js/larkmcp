@@ -1,5 +1,4 @@
 // loginUser.js - MCPツール登録エントリポイント
-import { z } from "zod";
 import {
   loginUserStartHandler,
   loginUserPollHandler,
@@ -17,13 +16,13 @@ export function registerLoginUserTool(server) {
     It can be used to get the user_access_token. user_access_token represents the user who is logged in to Lark. You can use this token to behave as the user.
     If you don't need to behave as the user, you can use the tenant_access_token instead, which can be obtained from the login_tenant tool.
     If the user doesn't request to login as a user, login_tenant tool is preferred over this tool.`,
-    loginUserStartHandler
+    loginUserStartHandler,
   );
 
   // "poll" tool
   server.tool(
     "login_user_poll",
     "'login_user_poll' checks if the OAuth code has been received and, if so, exchanges it for a token.",
-    loginUserPollHandler
+    loginUserPollHandler,
   );
 }

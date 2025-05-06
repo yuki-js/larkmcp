@@ -93,6 +93,6 @@ export function registerTestLarkApiTool(server) {
           },
         ],
       };
-    }
+    },
   );
 }
