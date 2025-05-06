@@ -102,7 +102,7 @@ export async function loginUserPollHandler() {
   // 認可コードをアクセストークンに交換
   const tokenResult = await exchangeCodeForToken(
     session.codeReceived,
-    session.config
+    session.config,
   );
   if (tokenResult.isError) {
     await session.cleanup();

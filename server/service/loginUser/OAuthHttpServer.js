@@ -28,7 +28,7 @@ export class OAuthHttpServer {
           this.onRequest({ code });
           res.writeHead(200, { "Content-Type": "text/html" });
           res.end(
-            "<html><body><h2>Login successful!</h2><p>You may close this window.</p></body></html>"
+            "<html><body><h2>Login successful!</h2><p>You may close this window.</p></body></html>",
           );
           setTimeout(() => {
             if (this.server) this.server.close();
@@ -48,13 +48,16 @@ export class OAuthHttpServer {
     });
     await new Promise((resolve) => this.server.listen(this.port, resolve));
     // 3分で自動停止
-    this.timeoutHandle = setTimeout(() => {
-      if (this.server) {
-        this.server.close();
-        this.server = null;
-        this.timeoutHandle = null;
-      }
-    }, 3 * 60 * 1000);
+    this.timeoutHandle = setTimeout(
+      () => {
+        if (this.server) {
+          this.server.close();
+          this.server = null;
+          this.timeoutHandle = null;
+        }
+      },
+      3 * 60 * 1000,
+    );
   }
 
   async stop() {

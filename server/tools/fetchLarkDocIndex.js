@@ -1,4 +1,3 @@
-import { z } from "zod";
 import fs from "fs/promises";
 import path from "path";
 
@@ -7,7 +6,7 @@ const csvPath = path.join(
   "..",
   "..",
   "data",
-  "a-full-list-of-available-lark-document.csv"
+  "a-full-list-of-available-lark-document.csv",
 );
 let csvText;
 try {
@@ -36,6 +35,6 @@ export function registerFetchLarkDocIndexTool(server) {
           },
         ],
       };
-    }
+    },
   );
 }

@@ -8,7 +8,7 @@ export class LoginSession {
     this.config = config;
     this.httpServer = new OAuthHttpServer(
       config.port,
-      this._onRequest.bind(this)
+      this._onRequest.bind(this),
     );
     this.oauthUrl = this._buildOAuthUrl();
     this.codeReceived = null;
@@ -20,9 +20,9 @@ export class LoginSession {
   _buildOAuthUrl() {
     const { app_id, redirect_uri } = this.config;
     return `https://open.larksuite.com/open-apis/authen/v1/index?app_id=${encodeURIComponent(
-      app_id
+      app_id,
     )}&redirect_uri=${encodeURIComponent(
-      redirect_uri
+      redirect_uri,
     )}&response_type=code&state=login`;
   }
 
