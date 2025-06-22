@@ -3,6 +3,7 @@ import {
   loginUserStartHandler,
   loginUserPollHandler,
 } from "../service/loginUser/loginUserToolHandler.js";
+import { z } from "zod";
 
 /**
  * Registers the loginUser tool on the MCP server.
@@ -16,7 +17,29 @@ export function registerLoginUserTool(server) {
     It can be used to get the user_access_token. user_access_token represents the user who is logged in to Lark. You can use this token to behave as the user.
     If you don't need to behave as the user, you can use the tenant_access_token instead, which can be obtained from the login_tenant tool.
     If the user doesn't request to login as a user, login_tenant tool is preferred over this tool.`,
-    loginUserStartHandler,
+    {
+      iAskedUser: z
+        .boolean()
+        .optional()
+        .default(false)
+        .describe(
+          "Set to true if you asked to login as a user and user has really intended to login as a user. Set to false if user has not explicitly intended to login as a user.",
+        ),
+    },
+    async ({ iAskedUser }) => {
+      if (!iAskedUser) {
+        return {
+          isError: true,
+          content: [
+            {
+              type: "text",
+              text: "Please use the login_tenant tool instead.",
+            },
+          ],
+        };
+      }
+      return loginUserStartHandler();
+    },
   );
 
   // "poll" tool

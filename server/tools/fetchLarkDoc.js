@@ -10,14 +10,38 @@ import { getOAuthConfig } from "../service/loginUser/OAuthConfig.js";
 export function registerFetchLarkDocTool(server) {
   server.tool(
     "fetch_lark_doc",
+    `Fetches the raw JSON data of a Lark's API specification.
+    This tool is not for fetching Lark Docs file, but for fetching Lark API specification. Don't mistake it for a file download tool.
+    If you want to fetch a Lark Docs file, 
+    1. Find the API specification reference from fetch_lark_doc_index tool
+    2. Use fetch_lark_doc tool to learn about the API specification related to the Lark Docs's block structure files, or anything else you want to know about the Lark Docs.
+    3. Use test_lark_api tool to try out the actual API calls of the Lark API.`,
     {
       url: z
         .string()
         .describe(
           "Human-facing Lark documentation URL (e.g. https://open.larksuite.com/document/server-docs/docs/docs/docx-v1/document/list) or a Lark doc path (e.g. /server-docs/docs/docs/docx-v1/document/list)",
         ),
+      iKnewTheValidSpecUrl: z
+        .boolean()
+        .optional()
+        .default(false)
+        .describe(
+          "Set to true to confirm that you learned the valid spec URL via fetch_lark_doc_index or you already knew the correct url. For the first call, please set it to false.",
+        ),
     },
-    async ({ url }) => {
+    async ({ url, iKnewTheValidSpecUrl }) => {
+      if (!iKnewTheValidSpecUrl) {
+        return {
+          isError: true,
+          content: [
+            {
+              type: "text",
+              text: "Have you learned the valid spec URL via fetch_lark_doc_index? If not, please use the 'fetch_lark_doc_index' tool to learn about the API specification first. If you already have correct knowledge about the API, please set iKnewTheValidSpecUrl to true.",
+            },
+          ],
+        };
+      }
       // Extract the fullPath from the human URL or accept a path directly
       let fullPath = null;
       let origin = "lark";

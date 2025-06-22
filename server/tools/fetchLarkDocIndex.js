@@ -33,6 +33,10 @@ export function registerFetchLarkDocIndexTool(server) {
             type: "text",
             text: csvText,
           },
+          {
+            type: "text",
+            text: "You would get a list of avalilable API documents. Next, please use fetch_lark_doc tool to fetch a specific document contents.",
+          },
         ],
       };
     },

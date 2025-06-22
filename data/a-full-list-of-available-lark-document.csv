@@ -1,6 +1,293 @@
-Page Title,Document Path
+Process overview,/server-docs/getting-started/getting-started
+Obtain access tokens,/server-docs/getting-started/api-access-token/app-access-token-development-guide
+Apply for API permission,/server-docs/getting-started/overview-of-app-scopes
+Configure app data permissions,/home/introduction-to-scope-and-authorization/configure-app-data-permissions
+Set IP allowlist,/server-docs/getting-started/ip-allowlist
+Calling APIs,/server-docs/getting-started/api-access-token/get-
+Adjusting API call limits for custom apps,/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing
+Server API list,/server-docs/getting-started/server-api-list
+Scope list,/server-docs/getting-started/scope-list
+Server SDK,/ukTMukTMukTM/uETO1YjLxkTN24SM5UjN
+Rate limits,/server-docs/getting-started/frequency-control
+General parameters,/server-docs/getting-started/terminology
+Server Error Codes,/server-docs/getting-started/server-error-codes
+Event Overview,/server-docs/event-subscription/overview-of-event-subscription
+Event List,/server-docs/event-subscription/event-list
+Configure encrypt key,/ukTMukTMukTM/uYDNxYjL2QTM24iN0EjN/event-subscription-configure-/configure-encrypt-key
+Modify verification token,/ukTMukTMukTM/uYDNxYjL2QTM24iN0EjN/event-subscription-configure-/modify-verification-token
+Configure the request address,/server-docs/event-subscription/event-subscription-configure-/request-url-configuration-case
+Add events,/server-docs/event-subscription/event-subscription-configure-/subscription-event-case
+Apply for scopes,/server-docs/event-subscription/event-security-verification
+Receive and process events,/server-docs/event-subscription/event-subscription-configure-/encrypt-key-encryption-configuration-case
+Get event's outbound IP,/server-docs/event-subscription/outbound_ip/list
+Event Callback Optimization Guide,/uAjLw4CM/ukTMukTMukTM/event-subscription-guide/event-callback-optimization-guide
+Callback overview,/uAjLw4CM/ukTMukTMukTM/event-subscription-guide/callback-subscription/callback-overview
+Step 1: Configure the callback subscription request URL,/uAjLw4CM/ukTMukTMukTM/event-subscription-guide/callback-subscription/step-1-choose-a-subscription-mode/send-callbacks-to-developers-server
+Step 2: Add callback,/uAjLw4CM/ukTMukTMukTM/event-subscription-guide/callback-subscription/add-callback
+Step 3: Receive callbacks,/uAjLw4CM/ukTMukTMukTM/event-subscription-guide/callback-subscription/receive-and-handle-callbacks
+FAQ,/uAjLw4CM/ukTMukTMukTM/event-subscription-guide/event-subscriptions/faq
+Resource introduction,/uAjLw4CM/ukTMukTMukTM/passport-v1/session/usum
+Obtain OAuth code,/common-capabilities/sso/api/obtain-oauth-code
+Obtain login user information,/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/user_info/get
+Obtain desensitized user login information in batches,/uAjLw4CM/ukTMukTMukTM/passport-v1/session/query
+Log out,/uAjLw4CM/ukTMukTMukTM/passport-v1/session/logout
+Get custom app tenant_access_token,/server-docs/getting-started/api-access-token/auth-v3/tenant_access_token_internal
+Get custom app app_access_token,/server-docs/getting-started/api-access-token/auth-v3/app_access_token_internal
+Store applications get app_access_token,/server-docs/getting-started/api-access-token/auth-v3/app_access_token
+Store applications get tenant_access_token,/server-docs/getting-started/api-access-token/auth-v3/tenant_access_token
+Get user_access_token,/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/oidc-access_token/create
+Refresh user_access_token,/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/oidc-refresh_access_token/create
+Re-pushing app_ticket,/server-docs/getting-started/api-access-token/auth-v3/app_ticket_resend
+Contacts overview,/server-docs/contact-v3/resources
+FAQ,/server-docs/contact-v3/faq
+Overview,/server-docs/contact-v3/scope/overview
+Obtain the Contacts permission scope,/server-docs/contact-v3/scope/list
+Contact Scope Updated,/server-docs/contact-v3/scope/events/updated
+Overview,/server-docs/contact-v3/user/field-overview
+Country/Region Code Reference Table,/server-docs/contact-v3/user/country-code-description
+Create a user,/server-docs/contact-v3/user/create
+Modify user information in part,/server-docs/contact-v3/user/patch
+Update UserID,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/update_user_id
+Obtain single user's information,/server-docs/contact-v3/user/get
+Obtain multiple users' information,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/batch
+Obtain the list of users directly under a department,/server-docs/contact-v3/user/find_by_department
+Obtain user ID via email or mobile number,/server-docs/contact-v3/user/batch_get_id
+Search Users,/server-docs/historic-version//user/search-users
+Delete User,/server-docs/contact-v3/user/delete
+Restore deleted users,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/resurrect
+Employment,/server-docs/contact-v3/user/events/created
+Termination,/server-docs/contact-v3/user/events/deleted
+Employee change,/server-docs/contact-v3/user/events/updated
+Fully Update User Information,/server-docs/contact-v3/user/update
+Overview,/server-docs/contact-v3/group/overview
+Add User Group,/server-docs/contact-v3/group/create
+Update User Group,/server-docs/contact-v3/group/patch
+Get User Group,/server-docs/contact-v3/group/get
+List User Group,/server-docs/contact-v3/group/simplelist
+Delete User Group,/server-docs/contact-v3/group/delete
+Overview,/server-docs/contact-v3/group/group-member/overview
+Add User Group Member,/server-docs/contact-v3/group/group-member/add
+Batch add user group members,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/batch_add
+List User Group Member,/server-docs/contact-v3/group/group-member/simplelist
+Remove User Group Member,/server-docs/contact-v3/group/group-member/remove
+Batch remove user group members,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/batch_remove
+Overview,/server-docs/contact-v3/custom_attr/overview
+Obtain Custom User Fields,/server-docs/contact-v3/custom_attr/list
+Member field change event,/server-docs/contact-v3/custom_attr/events/updated
+Overview,/server-docs/contact-v3/employee_type_enum/overview
+Create Workforce Type,/server-docs/contact-v3/employee_type_enum/create
+Update Workforce Type,/server-docs/contact-v3/employee_type_enum/update
+Fetch Workforce Type,/server-docs/contact-v3/employee_type_enum/list
+Delete Workforce Type,/server-docs/contact-v3/employee_type_enum/delete
+Add New Workforce Types,/server-docs/contact-v3/employee_type_enum/events/created
+Enable Workforce Types,/server-docs/contact-v3/employee_type_enum/events/actived
+Deactivate Workforce Types,/server-docs/contact-v3/employee_type_enum/events/deactivated
+Delete Workforce Types,/server-docs/contact-v3/employee_type_enum/events/deleted
+Change Names of Workforce Types,/server-docs/contact-v3/employee_type_enum/events/updated
+Overview,/server-docs/contact-v3/department/field-overview
+Create a department,/server-docs/contact-v3/department/create
+Modify department information in part,/server-docs/contact-v3/department/patch
+Update department information in whole,/server-docs/contact-v3/department/update
+Update DepartmentID,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/update_department_id
+change department group to common group,/server-docs/contact-v3/department/unbind_department_chat
+Obtain single department information,/server-docs/contact-v3/department/get
+Obtain bulk department information,/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/batch
+Obtain the list of sub-departments,/server-docs/contact-v3/department/children
+Obtain parent department information,/server-docs/contact-v3/department/parent
+Search for departments,/server-docs/contact-v3/department/search
+Delete Department,/server-docs/contact-v3/department/delete
+Department Created,/server-docs/contact-v3/department/events/created
+Department Deleted,/server-docs/contact-v3/department/events/deleted
+Department Updated,/server-docs/contact-v3/department/events/updated
+Resource introduction,/server-docs/contact-v3/functional_role/resource-introduction
+Create role,/server-docs/contact-v3/functional_role/create
+Update role name,/server-docs/contact-v3/functional_role/update
+Delete role,/server-docs/contact-v3/functional_role/delete
+Resource introduction,/server-docs/contact-v3/functional_role-member/resource-introduction
+Batch create role members,/server-docs/contact-v3/functional_role-member/batch_create
+Batch update role members scopes,/server-docs/contact-v3/functional_role-member/scopes
+The administrative scope of a member under a query role,/server-docs/contact-v3/functional_role-member/get
+Query all member information under the role,/server-docs/contact-v3/functional_role-member/list
+Delete members from roles,/server-docs/contact-v3/functional_role-member/batch_delete
+Contact Scope Description,/server-docs/contact-v3/scope_authority
+Overview,/server-docs/im-v1/introduction
+FAQs,/server-docs/im-v1/faq
+Resource introduction,/server-docs/im-v1/message/intro
+Thread Introduction,/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/thread-introduction
+Send message,/server-docs/im-v1/message/create
+Reply message,/server-docs/im-v1/message/reply
+Edit message,/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/update
+Recall message,/server-docs/im-v1/message/delete
+Forward a message,/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/forward
+Merge forward messages,/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/merge_forward
+Forward a thread,/uAjLw4CM/ukTMukTMukTM/reference/im-v1/thread/forward
+Query the read status of message,/server-docs/im-v1/message/read_users
+Get chat history,/server-docs/im-v1/message/list
+Obtain resource files in messages,/server-docs/im-v1/message/get
+Obtain the content of the specified message,/server-docs/im-v1/message/get-2
+Sent message content,/server-docs/im-v1/message-content-description/create_json
+Received message content,/server-docs/im-v1/message-content-description/message_content
+Receive message,/server-docs/im-v1/message/events/receive
+Message read,/server-docs/im-v1/message/events/message_read
+Recall message,/server-docs/im-v1/message/events/recalled
+Send messages in batches,/server-docs/im-v1/batch_message/send-messages-in-batches
+Recall messages in batches,/server-docs/im-v1/batch_message/delete
+Query the number of pushers and readers of batch messages,/server-docs/im-v1/batch_message/read_user
+Query the overall progress of a batch message,/server-docs/im-v1/batch_message/get_progress
+Upload image,/server-docs/im-v1/image/create
+Download image,/server-docs/im-v1/image/get
+Upload file,/server-docs/im-v1/file/create
+Download file,/server-docs/im-v1/file/get
+Send buzz messages in apps,/server-docs/im-v1/buzz-messages/urgent_app
+Resource introduction,/server-docs/im-v1/message-reaction/overview-of-message-reaction-resources
+Emoji copy,/server-docs/im-v1/message-reaction/emojis-introduce
+Add a reaction for a message,/server-docs/im-v1/message-reaction/create
+List message reactions,/server-docs/im-v1/message-reaction/list
+Delete a reaction for a message,/server-docs/im-v1/message-reaction/delete
+Add a reaction for a message,/server-docs/im-v1/message-reaction/event/created
+Delete a reaction for a message,/server-docs/im-v1/message-reaction/event/deleted
+Pin a message,/server-docs/im-v1/pin/create
+Unpin a message,/server-docs/im-v1/pin/delete
+Get pins in group,/server-docs/im-v1/pin/list
+Resource introduction,/server-docs/im-v1/message-card/overview
+Update the message card sent by the app,/server-docs/im-v1/message-card/patch
+Delay update message card,/server-docs/im-v1/message-card/delay-update-message-card
+Send message cards that are only visible to certain people,/server-docs/im-v1/message-card/send-message-cards-that-are-only-visible-to-certain-people
+Delete message cards that are only visible to certain people,/server-docs/im-v1/message-card/delete-message-cards-that-are-only-visible-to-certain-people
+Overview,/server-docs/group/overview
+Resource introduction,/server-docs/group/chat/intro
+Chat ID description,/server-docs/group/chat/chat-id-description
+Create a group,/server-docs/group/chat/create
+Delete a group,/server-docs/group/chat/delete
+Update group information,/server-docs/group/chat/update
+Updates group speech scopes,/server-docs/group/chat/update-2
+Obtain group information,/server-docs/group/chat/get
+Update group pinning,/server-docs/group/chat/put_top_notice
+Revoke group pinning,/server-docs/group/chat/delete_top_notice
+Obtain groups where the user or bot is a member,/server-docs/group/chat/list
+Search for groups visible to a user or bot,/server-docs/group/chat/search
+Obtains the group member speech scopes,/server-docs/group/chat/get-2
+Get group share link,/server-docs/group/chat/link
+Group disbanded,/server-docs/group/chat/events/disbanded
+Group configuration changed,/server-docs/group/chat/events/updated
+Resource introduction,/server-docs/group/chat-member/intro
+Specify group administrators,/server-docs/group/chat-member/add_managers
+Delete group administrators,/server-docs/group/chat-member/delete_managers
+Add users or bots to a group,/server-docs/group/chat-member/create
+Users or bots join a group voluntarily,/server-docs/group/chat-member/me_join
+Remove users or bots from a group,/server-docs/group/chat-member/delete
+Obtain group member list,/server-docs/group/chat-member/get
+Determine whether a user or bot is in a group,/server-docs/group/chat-member/is_in_chat
+Users join a group,/server-docs/group/chat-member/event/added-2
+Users leave a group,/server-docs/group/chat-member/event/deleted
+Invitation revoked,/server-docs/group/chat-member/event/withdrawn
+Bots added to a group,/server-docs/group/chat-member/event/added
+Bots removed from a group,/server-docs/group/chat-member/event/deleted-2
+User and bot chat first created,/server-docs/group/chat-member/event/bot-events
+Group announcement overview,/uAjLw4CM/ukTMukTMukTM/group/upgraded-group-announcement/group-announcement-overview
+Group announcement version changes,/uAjLw4CM/ukTMukTMukTM/group/upgraded-group-announcement/group-announcement-version-changes
+Group Announcement FAQs,/uAjLw4CM/ukTMukTMukTM/group/upgraded-group-announcement/group-announcement-faqs
+Group announcement data structure,/uAjLw4CM/ukTMukTMukTM/group/upgraded-group-announcement/data-structure/group-announcement-data-structure
+Obtain the basic information of a group announcement,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement/get
+Obtain all blocks of a group announcement,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement-block/list
+Create blocks in group announcement,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement-block-children/create
+Batch update blocks in group announcement,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement-block/batch_update
+Obtain the block content in group announcement,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement-block/get
+Obtain all the child blocks,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement-block-children/get
+Delete blocks in group announcement,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/chat-announcement-block-children/batch_delete
+Resource introduction,/server-docs/group/chat-announcement/intro
+Update group announcement info,/server-docs/group/chat-announcement/patch
+Obtain group announcement information,/server-docs/group/chat-announcement/get
+Add chat tab,/server-docs/group/chat-tab/create
+Delete chat tab,/server-docs/group/chat-tab/delete_tabs
+Update chat tab,/server-docs/group/chat-tab/update_tabs
+Sort chat tab,/server-docs/group/chat-tab/sort_tabs
+Pull chat tabs,/server-docs/group/chat-tab/list_tabs
+Resource introduction,/server-docs/group/chat-menu_tree/overview
+Add chat menu,/server-docs/group/chat-menu_tree/create
+Delete chat menu,/server-docs/group/chat-menu_tree/delete
+Patch chat menu item info,/server-docs/group/chat-menu_tree/patch
+Sort chat menus,/server-docs/group/chat-menu_tree/sort
+Get chat menus,/server-docs/group/chat-menu_tree/get
+Overview,/uAjLw4CM/ukTMukTMukTM/group/im-v2/overview
+Create app feed card,/uAjLw4CM/ukTMukTMukTM/group/im-v2/app_feed_card/create
+Update app feed card,/uAjLw4CM/ukTMukTMukTM/group/im-v2/app_feed_card-batch/update
+Delete app feed card,/uAjLw4CM/ukTMukTMukTM/group/im-v2/app_feed_card-batch/delete
+Update feed card button,/uAjLw4CM/ukTMukTMukTM/group/im-v2/chat_button/update
+Instant reminder,/uAjLw4CM/ukTMukTMukTM/group/im-v2/feed_card/patch
 Docs Overview,/server-docs/docs/docs-overview
 Docs Overview and Best Practice,/server-docs/docs/docs-faq
+Overview,/server-docs/docs/drive-v1/introduction
+FAQ,/server-docs/docs/drive-v1/faq
+Get Root Folder Meta,/server-docs/docs/drive-v1/folder/get-root-folder-meta
+Get Folder Meta,/server-docs/docs/drive-v1/folder/get-folder-meta
+List items in folder,/server-docs/docs/drive-v1/folder/list
+Create Folder,/server-docs/docs/drive-v1/folder/create_folder
+Move/Delete Folder,/server-docs/docs/drive-v1/folder/move-delete-folder
+Obtain Metadata,/server-docs/docs/drive-v1/file/batch_query
+Get File Statistics,/server-docs/docs/drive-v1/file/get
+Copy File,/server-docs/docs/drive-v1/file/copy
+Move File/Folder,/server-docs/docs/drive-v1/file/move
+Delete File/Folder,/server-docs/docs/drive-v1/file/delete
+Create online document,/server-docs/docs/drive-v1/file/create-online-document
+Query Task Status,/server-docs/docs/drive-v1/file/async-task/task_check
+Introduction,/server-docs/docs/drive-v1/media/introduction
+Upload Media,/server-docs/docs/drive-v1/media/upload_all
+Download Media,/server-docs/docs/drive-v1/media/download
+Get Temporary Download URL of Media,/server-docs/docs/drive-v1/media/batch_get_tmp_download_url
+Introduction,/server-docs/docs/drive-v1/media/multipart-upload-media/introduction
+Multipart Upload Media (Prepare),/server-docs/docs/drive-v1/media/multipart-upload-media/upload_prepare
+Multipart Upload Media (Upload),/server-docs/docs/drive-v1/media/multipart-upload-media/upload_part
+Multipart Upload Media (Finish),/server-docs/docs/drive-v1/media/multipart-upload-media/upload_finish
+Subscribe Docs events,/server-docs/docs/drive-v1/event/subscribe
+App field change,/server-docs/docs/drive-v1/event/list/bitable_field_changed
+File Title Update,/server-docs/docs/drive-v1/event/list/file-title-update
+File Read,/server-docs/docs/drive-v1/event/list/file-read
+File Edited,/server-docs/docs/drive-v1/event/list/file-edited
+File Collaborator Add,/server-docs/docs/drive-v1/event/list/file-collaborator-add
+File Collaborator Remove,/server-docs/docs/drive-v1/event/list/file-collaborator-remove
+Delete file to trash can,/server-docs/docs/drive-v1/event/list/delete-file-to-trash-can
+File Deleted Completely,/server-docs/docs/drive-v1/event/list/file-deleted-completely
+Bitable Record Changed,/server-docs/docs/drive-v1/event/list/bitable-record-changed
+Document Search,/server-docs/docs/drive-v1/search/document-search
+Upload Files,/server-docs/docs/drive-v1/upload/upload_all
+Introduction,/server-docs/docs/drive-v1/upload/multipart-upload-file-/introduction
+Multipart Upload Files (Prepare),/server-docs/docs/drive-v1/upload/multipart-upload-file-/upload_prepare
+Multipart Upload Files (Upload),/server-docs/docs/drive-v1/upload/multipart-upload-file-/upload_part
+Multipart Upload Files (Finish),/server-docs/docs/drive-v1/upload/multipart-upload-file-/upload_finish
+Download Files,/server-docs/docs/drive-v1/download/download
+Overview,/server-docs/docs/drive-v1/import_task/import-user-guide
+Create Import Task,/server-docs/docs/drive-v1/import_task/create
+Query import task result,/server-docs/docs/drive-v1/import_task/get
+Overview,/server-docs/docs/drive-v1/export_task/export-user-guide
+Create an export task,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/export_task/create
+get export task result,/server-docs/docs/drive-v1/export_task/get
+download export file,/server-docs/docs/drive-v1/export_task/download
+Overview,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/overview
+Create document version,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/create
+Delete document version,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/delete
+Get document version,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/get
+List document version,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list
+Create Subscription,/server-docs/docs/drive-v1/file-subscription/create
+Get subscription status,/server-docs/docs/drive-v1/file-subscription/get
+update subscription status,/server-docs/docs/drive-v1/file-subscription/patch
+Overview,/server-docs/docs/wiki-v2/getting-start
+API FAQ,/server-docs/docs/wiki-v2/wiki-qa
+Get a list of Wiki spaces,/server-docs/docs/wiki-v2/space/list
+Access to Wiki space information,/server-docs/docs/wiki-v2/space/get
+Create Wiki space,/server-docs/docs/wiki-v2/space/create
+Add Wiki space members,/server-docs/docs/wiki-v2/space-member/create
+Delete Wiki space members,/server-docs/docs/wiki-v2/space-member/delete
+Update Wiki space settings,/server-docs/docs/wiki-v2/space-setting/update
+Create node,/server-docs/docs/wiki-v2/space-node/create
+Get Wiki node information,/server-docs/docs/wiki-v2/space-node/get_node
+Get the list of child nodes,/server-docs/docs/wiki-v2/space-node/list
+Move node,/server-docs/docs/wiki-v2/space-node/move
+Update title,/server-docs/docs/wiki-v2/space-node/update_title
+Create a node copy,/server-docs/docs/wiki-v2/space-node/copy
+Add an existing document to Wiki space,/server-docs/docs/wiki-v2/task/move_docs_to_wiki
+Retrieve the result of Wiki task,/server-docs/docs/wiki-v2/task/get
+Search Wiki,/server-docs/docs/wiki-v2/search_wiki
 Document overview,/server-docs/docs/docs/docx-v1/docx-overview
 Document FAQs,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/faq
 Document,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/data-structure/document
@@ -14,10 +301,73 @@ Create Block,/server-docs/docs/docs/docx-v1/document-block/create
 Create nested blocks,/ukTMukTMukTM/uUDN04SN0QjL1QDN/document-docx/docx-v1/document-block-descendant/create
 Update Block,/server-docs/docs/docs/docx-v1/document-block/patch
 Query Block,/server-docs/docs/docs/docx-v1/document-block/get
-Query Block Children,/server-docs/docs/docs/docx-v1/document-block/get-2
 Batch Update Blocks,/server-docs/docs/docs/docx-v1/document-block/batch_update
+Query Block Children,/server-docs/docs/docs/docx-v1/document-block/get-2
 Delete Blocks,/server-docs/docs/docs/docx-v1/document-block/batch_delete
-Upgraded Docs OpenAPI Access Guide,/server-docs/docs/docs/upgraded-docs-openapi-access-guide
+Document version changes,/server-docs/docs/docs/upgraded-docs-openapi-access-guide
+Create Spreadsheet,/server-docs/docs/sheets-v3/spreadsheet/create
+Obtain Spreadsheet Metadata,/server-docs/docs/sheets-v3/spreadsheet/obtain-spreadsheet-metadata
+Update Spreadsheet Properties,/server-docs/docs/sheets-v3/spreadsheet/update-spreadsheet-properties
+Query sheet,/ukTMukTMukTM/uUDN04SN0QjL1QDN/sheets-v3/spreadsheet-sheet/get
+Get sheet,/ukTMukTMukTM/uUDN04SN0QjL1QDN/sheets-v3/spreadsheet-sheet/query
+Operate Sheets,/server-docs/docs/sheets-v3/spreadsheet-sheet/operate-sheets
+Update Sheet Properties,/server-docs/docs/sheets-v3/spreadsheet-sheet/update-sheet-properties
+Add Rows or Columns,/server-docs/docs/sheets-v3/sheet-rowcol/add-rows-or-columns
+Insert Rows or Columns,/server-docs/docs/sheets-v3/sheet-rowcol/insert-rows-or-columns
+Update Rows or Columns,/server-docs/docs/sheets-v3/sheet-rowcol/update-rows-or-columns
+Move Dimension,/server-docs/docs/sheets-v3/sheet-rowcol/move_dimension
+Delete Rows or Columns,/server-docs/docs/sheets-v3/sheet-rowcol/-delete-rows-or-columns
+Prepend Data,/server-docs/docs/sheets-v3/data-operation/prepend-data
+Append Data,/server-docs/docs/sheets-v3/data-operation/append-data
+Reading a Single Range,/server-docs/docs/sheets-v3/data-operation/reading-a-single-range
+Write Data to a Single Range,/server-docs/docs/sheets-v3/data-operation/write-data-to-a-single-range
+Reading Multiple Ranges,/server-docs/docs/sheets-v3/data-operation/reading-multiple-ranges
+Write Data to Multiple Ranges,/server-docs/docs/sheets-v3/data-operation/write-data-to-multiple-ranges
+Set Cell Style,/server-docs/docs/sheets-v3/data-operation/set-cell-style
+Batch Set Cell Style,/server-docs/docs/sheets-v3/data-operation/batch-set-cell-style
+Write Images,/server-docs/docs/sheets-v3/data-operation/write-images
+Merge Cells,/server-docs/docs/sheets-v3/data-operation/merge-cells
+Split Cells,/server-docs/docs/sheets-v3/data-operation/split-cells
+Find cells,/server-docs/docs/sheets-v3/data-operation/find
+Replace cells,/server-docs/docs/sheets-v3/data-operation/replace
+Filter User Guide,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter/filter-user-guide
+Obtain Filter,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter/get
+Create Filter,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter/create
+Update Filter,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter/update
+Delete Filter,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter/delete
+Obtain Filter View,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/get
+Query Filter View,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/query
+Create Filter View,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/create
+Update Filter View,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/patch
+Delete Filter View,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/delete
+Filter View Condition User Guide,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/spreadsheet-sheet-filter_view-condition/filter-view-condition-user-guide
+Obtain Filter Condition,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/spreadsheet-sheet-filter_view-condition/get
+Query Filter Condition,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/spreadsheet-sheet-filter_view-condition/query
+Create Filter Condition,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/spreadsheet-sheet-filter_view-condition/create
+Update Filter Condition,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/spreadsheet-sheet-filter_view-condition/update
+Delete Filter Condition,/server-docs/docs/sheets-v3/spreadsheet-sheet-filter_view/spreadsheet-sheet-filter_view-condition/delete
+Add Locked Cells,/server-docs/docs/sheets-v3/protect-range/add-locked-cells
+Retrieve Protection Scopes,/server-docs/docs/sheets-v3/protect-range/retrieve-protection-scopes
+Modify Protection Scopes,/server-docs/docs/sheets-v3/protect-range/modify-protection-scopes
+Delete Protection Scopes,/server-docs/docs/sheets-v3/protect-range/delete-protection-scopes
+Data Validation User Guide (Drop-down List Included),/server-docs/docs/sheets-v3/datavalidation/datavalidation-guide
+Set Drop-down List,/server-docs/docs/sheets-v3/datavalidation/set-dropdown
+Remove the Drop-down List in the Specific Range,/server-docs/docs/sheets-v3/datavalidation/delete-datavalidation
+Update Drop-down List Setting,/server-docs/docs/sheets-v3/datavalidation/update-datavalidation
+Query Drop-down List in the Specific Range,/server-docs/docs/sheets-v3/datavalidation/query-datavalidation
+Conditional Formatting User Guide,/server-docs/docs/sheets-v3/conditionformat/condition-format-guide
+Create Conditional Formatting Rules,/server-docs/docs/sheets-v3/conditionformat/condition-format-set
+Obtain Conditional Formatting Rules,/server-docs/docs/sheets-v3/conditionformat/condition-format-get
+Update Conditional Formatting Rules,/server-docs/docs/sheets-v3/conditionformat/condition-format-update
+Remove Conditional Formatting Rules,/server-docs/docs/sheets-v3/conditionformat/condition-format-delete
+Float image user guide,/server-docs/docs/sheets-v3/spreadsheet-sheet-float_image/float-image-user-guide
+Obtain Floating Image,/server-docs/docs/sheets-v3/spreadsheet-sheet-float_image/get
+Query Floating Image,/server-docs/docs/sheets-v3/spreadsheet-sheet-float_image/query
+Create Floating Image,/server-docs/docs/sheets-v3/spreadsheet-sheet-float_image/create
+Update Floating Image,/server-docs/docs/sheets-v3/spreadsheet-sheet-float_image/patch
+Delete Floating Image,/server-docs/docs/sheets-v3/spreadsheet-sheet-float_image/delete
+Overview,/server-docs/docs/sheets-v3/guide/overview
+sheets-faq,/server-docs/docs/sheets-v3/guide/sheets-faq
 Overview,/server-docs/docs/bitable-v1/bitable-overview
 Base Data Structure Overview,/server-docs/docs/bitable-v1/bitable-structure
 Copy App,/server-docs/docs/bitable-v1/app/copy
@@ -53,7 +403,36 @@ List fields,/server-docs/docs/bitable-v1/app-table-field/list
 Create field,/server-docs/docs/bitable-v1/app-table-field/create
 Update field,/server-docs/docs/bitable-v1/app-table-field/update
 Delete field,/server-docs/docs/bitable-v1/app-table-field/delete
+Duplicate Dashboard,/server-docs/docs/bitable-v1/app-dashboard/copy
+List dashboards,/server-docs/docs/bitable-v1/app-dashboard/list
+Patch form,/server-docs/docs/bitable-v1/form/patch-2
+List form,/server-docs/docs/bitable-v1/form/get
+Patch form fields,/server-docs/docs/bitable-v1/form/patch
+List form fields,/server-docs/docs/bitable-v1/form/list
+Overview,/server-docs/docs/bitable-v1/advanced-permission/advanced-permission-guide
+List roles,/server-docs/docs/bitable-v1/advanced-permission/app-role/list
+Create role,/server-docs/docs/bitable-v1/advanced-permission/app-role/create
+Delete role,/server-docs/docs/bitable-v1/advanced-permission/app-role/delete
+Update role,/server-docs/docs/bitable-v1/advanced-permission/app-role/update
+Batch delete members,/server-docs/docs/bitable-v1/advanced-permission/app-role-member/batch_delete
+Batch create members,/server-docs/docs/bitable-v1/advanced-permission/app-role-member/batch_create
+List members,/server-docs/docs/bitable-v1/advanced-permission/app-role-member/list
+Create member,/server-docs/docs/bitable-v1/advanced-permission/app-role-member/create
+Delete member,/server-docs/docs/bitable-v1/advanced-permission/app-role-member/delete
+List automations,/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-workflow/list
+update workflow,/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-workflow/update
 Base Overview,/server-docs/docs/bitable-v1/notification
+Board overview,/ukTMukTMukTM/uUDN04SN0QjL1QDN/board-v1/overview
+data structure,/ukTMukTMukTM/uUDN04SN0QjL1QDN/board-v1/data-structure
+list nodes,/ukTMukTMukTM/uUDN04SN0QjL1QDN/board-v1/whiteboard-node/list
+whiteboard image,/ukTMukTMukTM/uUDN04SN0QjL1QDN/board-v1/whiteboard/download_as_image
+Obtain a Collaborator List,/server-docs/docs/drive-v1/permission/permission-member/obtain-a-collaborator-list
+Add permissions,/server-docs/docs/drive-v1/permission/permission-member/create
+UpdatePermissionMember,/server-docs/docs/drive-v1/permission/permission-member/update
+DeletePermissionMember,/server-docs/docs/drive-v1/permission/permission-member/delete
+Transfer Ownership,/server-docs/docs/drive-v1/permission/permission-member/transfer-ownership
+Get Document Sharing Settings V2,/server-docs/docs/drive-v1/permission/permission-public/get-document-sharing-settings-v2
+Update document sharing settings,/server-docs/docs/drive-v1/permission/permission-public/patch
 Get Document Comments in Pages,/server-docs/docs/drive-v1/CommentAPI/list
 Batch Query Comments,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-comment/batch_query
 Solve or Restore a Comment,/server-docs/docs/drive-v1/CommentAPI/patch
@@ -62,4 +441,617 @@ Get a Global Comment,/server-docs/docs/drive-v1/CommentAPI/get
 Get Replies List,/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-comment-reply/list
 Update Reply,/server-docs/docs/drive-v1/CommentAPI/update
 Delete Reply,/server-docs/docs/drive-v1/CommentAPI/delete
+Get docs content,/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1/content/get
+Error Codes,/server-docs/docs/appendix/error-codes
+Data Types Supported By Sheets,/server-docs/docs/appendix/data-types-supported-by-sheets
+Data Formats Supported by Sheets,/server-docs/docs/appendix/data-formats-supported-by-sheets
 Subscribe to Events,/server-docs/docs/events
+Calendar overview,/server-docs/calendar-v4/calendar-overview
+Calendar FAQ,/server-docs/calendar-v4/calendar-faq
+Calendar resources introduction,/server-docs/calendar-v4/calendar/introduction
+Create a shared calendar,/server-docs/calendar-v4/calendar/create
+Delete shared calendar,/server-docs/calendar-v4/calendar/delete
+Query primary calendar information,/server-docs/calendar-v4/calendar/primary
+Query calendar information,/server-docs/calendar-v4/calendar/get
+Query availability of the primary calendar,/server-docs/calendar-v4/freebusy/list
+Query the calendar list,/server-docs/calendar-v4/calendar/list
+Update calendar information,/server-docs/calendar-v4/calendar/patch
+Search Calendar,/server-docs/calendar-v4/calendar/search
+Subscribe Calendar,/server-docs/calendar-v4/calendar/subscribe
+Unsubscribe Calendar,/server-docs/calendar-v4/calendar/unsubscribe
+Subscribe Calendar Changes,/server-docs/calendar-v4/calendar/subscription
+Unsubscribe Calendar Changes,/server-docs/calendar-v4/calendar/unsubscription
+Calendar is changed,/server-docs/calendar-v4/calendar/events/changed
+Introduction to access control resources,/server-docs/calendar-v4/calendar-acl/introduction
+Create ACL,/server-docs/calendar-v4/calendar-acl/create
+Delete ACL,/server-docs/calendar-v4/calendar-acl/delete
+Obtain the ACL,/server-docs/calendar-v4/calendar-acl/list
+Subscribe ACL Event,/server-docs/calendar-v4/calendar-acl/subscription
+Unsubscribe ACL Event,/server-docs/calendar-v4/calendar-acl/unsubscription
+Create an ACL,/server-docs/calendar-v4/calendar-acl/events/created
+Remove an ACL,/server-docs/calendar-v4/calendar-acl/events/deleted
+Event resource introduction,/server-docs/calendar-v4/calendar-event/introduction
+Create event,/server-docs/calendar-v4/calendar-event/create
+Delete Event,/server-docs/calendar-v4/calendar-event/delete
+Update Event,/server-docs/calendar-v4/calendar-event/patch
+Get Event,/server-docs/calendar-v4/calendar-event/get
+Get Event List,/server-docs/calendar-v4/calendar-event/list
+Search Event,/server-docs/calendar-v4/calendar-event/search
+Subscribe Event Changes,/server-docs/calendar-v4/calendar-event/subscription
+Unsubscribe Event Changes,/server-docs/calendar-v4/calendar-event/unsubscription
+Get Event instances,/uAjLw4CM/ukTMukTMukTM/reference/calendar-v4/calendar-event/instances
+Query event view,/uAjLw4CM/ukTMukTMukTM/reference/calendar-v4/calendar-event/instance_view
+Schedule is changed,/server-docs/calendar-v4/calendar-event/events/changed
+Create meeting chat,/uAjLw4CM/ukTMukTMukTM/reference/calendar-v4/calendar-event-meeting_chat/create
+Unbind meeting chat,/uAjLw4CM/ukTMukTMukTM/reference/calendar-v4/calendar-event-meeting_chat/delete
+Create meeting minute,/uAjLw4CM/ukTMukTMukTM/reference/calendar-v4/calendar-event-meeting_minute/create
+Introduction to leave event resources,/server-docs/calendar-v4/timeoff_event/introduction
+Create Timeoff Event,/server-docs/calendar-v4/timeoff_event/create
+Delete Timeoff Event,/server-docs/calendar-v4/timeoff_event/delete
+Query meeting room event topics and meeting details,/server-docs/meeting_room-v1/api-reference/
+Query room availability,/server-docs/meeting_room-v1/api-reference/query-meeting-room-freebusy
+Reply meeting room event instance,/server-docs/meeting_room-v1/api-reference/reply-meeting-room-event-instance
+Meeting Room Status Changed,/server-docs/meeting_room-v1/event/status_changed
+Third-party meeting room event changes,/server-docs/meeting_room-v1/event/third-room-event-changes
+Event invitee resource introduction,/server-docs/calendar-v4/calendar-event-attendee/introduction
+Create event invitees,/server-docs/calendar-v4/calendar-event-attendee/create
+Delete event invitees,/server-docs/calendar-v4/calendar-event-attendee/batch_delete
+Obtain event invitee list,/server-docs/calendar-v4/calendar-event-attendee/list
+Obtain the list of members of group invitees of an event,/server-docs/calendar-v4/calendar-event-attendee-chat_member/list
+Generate CalDAV configuration,/server-docs/calendar-v4/setting/generate_caldav_conf
+Exchange resource introduction,/server-docs/calendar-v4/exchange_binding/introduction
+Bind Exchange account to Lark account,/server-docs/calendar-v4/exchange_binding/create
+Unbind the Exchange account,/server-docs/calendar-v4/exchange_binding/delete
+Query the binding status of the Exchange account,/server-docs/calendar-v4/exchange_binding/get
+Video Conferencing overview,/server-docs/vc-v1/video-conferencing-overview
+Resource introduction,/server-docs/vc-v1/reserve/schedule-meeting-overview
+Schedule a meeting,/server-docs/vc-v1/reserve/apply
+Delete a schedule,/server-docs/vc-v1/reserve/delete
+Update a schedule,/server-docs/vc-v1/reserve/update
+Obtain a schedule,/server-docs/vc-v1/reserve/get
+Obtain an active meeting,/server-docs/vc-v1/reserve/get_active_meeting
+Meeting overview,/server-docs/vc-v1/meeting/meeting-overview
+Invite participants,/server-docs/vc-v1/meeting/invite
+Remove participants,/server-docs/vc-v1/meeting/kickout
+Set meeting host,/server-docs/vc-v1/meeting/set_host
+End a meeting,/server-docs/vc-v1/meeting/end
+Obtain meeting details,/server-docs/vc-v1/meeting/get
+List meetings of same meeting number,/server-docs/vc-v1/meeting/list_by_no
+Start of corporate meeting,/server-docs/vc-v1/meeting/events/all_meeting_started
+End of corporate meeting,/server-docs/vc-v1/meeting/events/all_meeting_ended
+Meeting started,/server-docs/vc-v1/meeting/events/meeting_started
+Meeting ended,/server-docs/vc-v1/meeting/events/meeting_ended
+Join meeting,/server-docs/vc-v1/meeting/events/join_meeting
+Leave meeting,/server-docs/vc-v1/meeting/events/leave_meeting
+Start recording,/server-docs/vc-v1/meeting/events/recording_started
+Stop recording,/server-docs/vc-v1/meeting/events/recording_ended
+Finished recording,/server-docs/vc-v1/meeting/events/recording_ready
+Share started,/server-docs/vc-v1/meeting/events/share_started
+Meeting record,/server-docs/vc-v1/meeting/events/share_ended
+Recording overview,/server-docs/vc-v1/meeting-recording/recording-overview
+Start recording,/server-docs/vc-v1/meeting-recording/start
+Stop recording,/server-docs/vc-v1/meeting-recording/stop
+Obtain recording files,/server-docs/vc-v1/meeting-recording/get
+Authorize recording files,/server-docs/vc-v1/meeting-recording/set_permission
+Resource introduction,/server-docs/vc-v1/report/meeting-report-overview
+Obtain meeting reports,/server-docs/vc-v1/report/get_daily
+Get top user list,/server-docs/vc-v1/report/get_top_user
+Resource introduction,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/export-overview
+Export meeting details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/meeting_list
+Export participant details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/participant_list
+Export participant meeting quality data,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/participant_quality_list
+Export meeting room reservation data,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/resource_reservation_list
+Query export task results,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/get
+Download export file,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/export/download
+Resource introduction,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/room-level-overview
+Create room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/create
+Delete room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/del
+Update room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/patch
+Query room level details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/get
+Batch query room level details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/mget
+Query room level list,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/list
+Search room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/search
+Create room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/events/created
+Delete room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/events/deleted
+Update room level,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_level/events/updated
+Resource introduction,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/room-overview
+Create meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/create
+Delete meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/delete
+Update meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/patch
+Query meeting room details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/get
+Batch query meeting room details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/mget
+Query meeting room list,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/list
+Search meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/search
+Create meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/events/created
+Update meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/events/updated
+Delete meeting room,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room/events/deleted
+Resource introduction,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/scope_config/room-configuration-overview
+Query room configuration,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/scope_config/get
+Set room configuration,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/scope_config/create
+Get reserve limitation,/server-docs/vc-v1/reserve_config/reserve_scope
+Update reserve limitation,/server-docs/vc-v1/reserve_config/patch
+Get reserve form,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/reserve_config-form/get
+Update reserve form,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/reserve_config-form/patch
+Get reserve admin,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/reserve_config-admin/get
+Update reserve admin,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/reserve_config-admin/patch
+Update room reserve limitation,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/reserve_config/events/updated
+Resource introduction,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/meeting-room-data/resource-introduction
+Get meeting details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/meeting_list/get
+Get participant details,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/participant_list/get
+Get participant meeting quality data,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/participant_quality_list/get
+Get meeting room reservation data,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/resource_reservation_list/get
+Get alert center history,/server-docs/vc-v1/alert/list
+Overview,/uAjLw4CM/ukTMukTMukTM/reference/attendance-v1/overview
+Access guide,/server-docs/attendance-v1/attendance-development-guidelines
+Query Attendance Shift by Name,/server-docs/attendance-v1/shift/query
+Get Attendance Shift Details,/server-docs/attendance-v1/shift/get
+Delete Attendance Shift,/server-docs/attendance-v1/shift/delete
+Create Attendance Shift,/server-docs/attendance-v1/shift/create
+Create or modify an Attendance Group,/server-docs/attendance-v1/group/create
+Query Attendance Group by Name,/server-docs/attendance-v1/group/search
+Get Attendance Group Details,/server-docs/attendance-v1/group/get
+Delete Attendance Group,/server-docs/attendance-v1/group/delete
+Create or modify schedule,/server-docs/attendance-v1/user_daily_shift/batch_create
+Query Schedule Information,/server-docs/attendance-v1/user_daily_shift/query
+Attendance Statistics Development Guide,/server-docs/attendance-v1/user_stats_data/attendance-statistic-reference
+Update Statistics Settings,/server-docs/attendance-v1/user_stats_data/update
+Query Statistics Header,/server-docs/attendance-v1/user_stats_data/query-2
+Query Statistics Settings,/server-docs/attendance-v1/user_stats_data/query
+Query statistical data,/server-docs/attendance-v1/user_stats_data/query-3
+Get User Attendance Data,/server-docs/attendance-v1/user_approval/get-user-attendance-data2
+Notify Approval Status Update,/server-docs/attendance-v1/user_approval/notify-approval-status-update2
+Add Approved Data in Lark Attendance,/server-docs/attendance-v1/user_approval/add-approved-data-in-feishu-attendance2
+Get Allowed Correction Time,/server-docs/attendance-v1/user_task_remedy/query_user_allowed_remedys
+Get Correction Records,/server-docs/attendance-v1/user_task_remedy/query
+Notify of Correction Request Submission,/server-docs/attendance-v1/user_task_remedy/create
+Batch Query Attendance Records,/server-docs/attendance-v1/user_task/query
+Get Attendance Records,/server-docs/attendance-v1/user_task/get
+Get Attendance Result,/server-docs/attendance-v1/user_task/query-2
+Import Attendance Records,/server-docs/attendance-v1/user_task/batch_create
+User task status change event,/server-docs/attendance-v1/event/user-task-status-change-event
+Attendance Development Guidelines,/server-docs/attendance-v1/Attendance/Development_Guide
+Download Files,/server-docs/attendance-v1/Attendance//rule/download-file
+Batch Query the User Settings,/server-docs/attendance-v1/Attendance//rule/batch-query-user-settings
+Modify User Settings,/server-docs/attendance-v1/Attendance//rule/user-setting-modify
+Upload Files,/server-docs/attendance-v1/Attendance//rule/file_upload
+Create or Modify Attendance Groups,/server-docs/attendance-v1/Attendance//rule/group_create_update
+Delete Attendance Groups,/server-docs/attendance-v1/Attendance//rule/group_delete
+Get Attendance Group Details,/server-docs/attendance-v1/Attendance//rule/group
+Create a Shift,/server-docs/attendance-v1/Attendance//rule/shift_create
+Delete a Shift,/server-docs/attendance-v1/Attendance//rule/shift_delete
+Get Shift Details,/server-docs/attendance-v1/Attendance//rule/shift_by_id
+Get the Shift Information by the Shift Name,/server-docs/attendance-v1/Attendance//rule/shift_by_name
+Query Statistics,/server-docs/attendance-v1/Attendance//task/query-statistics-data
+Query the Statistics Table Header,/server-docs/attendance-v1/Attendance//task/query-statistics-header
+Update Statistics Settings,/server-docs/attendance-v1/Attendance//task/update-user-stats-settings
+Query Statistics Configuration,/server-docs/attendance-v1/Attendance//task/query-user-statistics-settings
+Query the Schedule Information,/server-docs/attendance-v1/Attendance//task/GetScheduledShifts
+Get Users’ Attendance Results,/server-docs/attendance-v1/Attendance//task/GetCheckinResults
+Batch Query the Attendance Flow Records,/server-docs/attendance-v1/Attendance//task/BatchQueryCheckinFlowHistory
+Import Attendance Flow Records,/server-docs/attendance-v1/Attendance//task/ImportAttendanceFlowRecords
+Get Attendance Flow Records,/server-docs/attendance-v1/Attendance//task/GetCardSwipeHistory
+Get Users’ Correction Records,/server-docs/attendance-v1/Attendance//task/GetUsersRemedyRecords
+Create or Modify a Schedule,/server-docs/attendance-v1/Attendance//task/CreateandEditShifts
+Get User Attendance Data,/server-docs/attendance-v1/Attendance//task/RetrieveUserApprovals
+Add Approved Data in Lark Attendance,/server-docs/attendance-v1/Attendance//task/AddApprovalsInLarkAttendance
+Get Users’ Allowed Correction Time,/server-docs/attendance-v1/Attendance//task/query-user-allowed-remedys
+Notify Correction Request Submission,/server-docs/attendance-v1/Attendance//task/notify-remedy-approval-initiation
+Notify Approval Status Update,/server-docs/attendance-v1/Attendance//task/notify-approval-status-update
+Overview,/server-docs/approval-v4/approval-overview
+FAQs,/server-docs/approval-v4/approval-related-faqs
+Approval access guide,/server-docs/approval-v4/development-guide/approval-access-guide
+Native approval access guide,/server-docs/approval-v4/development-guide/native-approval-access-guide
+Store app development guide,/server-docs/approval-v4/development-guide/store-app-development-guide
+Three-party approval access guide,/server-docs/approval-v4/development-guide/third-party-approval-integration/three-party-approval-access-guide
+Preparation for third-party approval integration,/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation
+Resource introduction,/server-docs/approval-v4/approval/overview-of-approval-resources
+Associate external options,/server-docs/approval-v4/approval/associate-external-options
+Create an approval definition,/server-docs/approval-v4/approval/create
+View approval definitions,/server-docs/approval-v4/approval/get
+Resource introduction,/server-docs/approval-v4/instance/overview-approval-instance
+Create an approval instance,/server-docs/approval-v4/instance/create
+Revoke approval instances,/server-docs/approval-v4/instance/cancel
+Notify someone of approval instances,/server-docs/approval-v4/instance/cc
+Preview approval instances,/server-docs/approval-v4/instance/approval-preview
+Obtain details of an approval instance,/server-docs/approval-v4/instance/get
+Obtain IDs of multiple approval instances,/server-docs/approval-v4/instance/list
+Resource introduction,/server-docs/approval-v4/task/introduction
+Agree to approval task,/server-docs/approval-v4/task/approve
+Refuse to approve tasks,/server-docs/approval-v4/task/reject
+Transfer the approval task,/server-docs/approval-v4/task/transfer
+Return approval task,/server-docs/approval-v4/task/specified_rollback
+Add approvers,/server-docs/approval-v4/task/approval-task-addsign
+Resubmit the task for approval,/server-docs/approval-v4/task/resubmit
+Resource introduction,/server-docs/approval-v4/file/overview
+Upload files,/server-docs/approval-v4/file/upload-files
+Resource introduction,/server-docs/approval-v4/instance-comment/overview
+Create comments,/server-docs/approval-v4/instance-comment/create
+Delete comments,/server-docs/approval-v4/instance-comment/delete
+Clear comments,/server-docs/approval-v4/instance-comment/remove
+Receive comments,/server-docs/approval-v4/instance-comment/list
+Resource introduction,/server-docs/approval-v4/external_approval/overview
+Create a third-party approval definition,/server-docs/approval-v4/external_approval/create
+Quick approval callback,/server-docs/approval-v4/external_approval/quick-approval-callback
+Resource introduction,/server-docs/approval-v4/external_instance/overview
+Sync instances,/server-docs/approval-v4/external_instance/create
+Verify instances,/server-docs/approval-v4/external_instance/check
+Resource introduction,/server-docs/approval-v4/external_task/overview
+Status of third-party approval tasks,/server-docs/approval-v4/external_task/list
+Send Bot messages,/server-docs/approval-v4/message/send-bot-messages
+Update Bot messages,/server-docs/approval-v4/message/update-bot-messages
+List of instances,/server-docs/approval-v4/approval-search/query-2
+List of cc information,/server-docs/approval-v4/approval-search/search_cc
+List of tasks,/server-docs/approval-v4/approval-search/search
+Query the user's task list,/server-docs/approval-v4/approval-search/query
+Function introduction,/server-docs/approval-v4/event/function-introduction
+Subscription steps,/server-docs/approval-v4/event/subscription-steps
+FAQs,/server-docs/approval-v4/event/approval-events-faq
+Subscribe to approval events,/server-docs/approval-v4/event/event-interface/subscribe
+Unsubscribe from approval events,/server-docs/approval-v4/event/event-interface/unsubscribe
+Approval cc status change,/server-docs/approval-v4/event/common-event/approval-cc-event
+Approval task status change,/server-docs/approval-v4/event/common-event/approval-task-event
+Approval instance status change,/server-docs/approval-v4/event/common-event/approval-instance-event
+Approval definition updates,/server-docs/approval-v4/event/common-event/custom-approval-event
+Approval for going out,/server-docs/approval-v4/event/special-event/out-of-office
+Business trip,/server-docs/approval-v4/event/special-event/business-trip
+Correction,/server-docs/approval-v4/event/special-event/attendance-record-correction
+Shift swap,/server-docs/approval-v4/event/special-event/shift-change
+Overtime,/server-docs/approval-v4/event/special-event/overtime
+Leave,/server-docs/approval-v4/event/special-event/leave
+General Approval events,/server-docs/approval-v4/event/general-approval-events
+Subscribe to an Approvals Event,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/subscribe-to-an-approvals-event-
+Cancel a Subscription to an Approvals Event,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/cancel-a-subscription-to-an-approvals-event
+Approval task return,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/approval-task-return
+Obtain Single Approval Form,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/obtain-single-approval-form
+Create Approval Instance,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/create-approval-instance
+Obtain Single Approval Instance Details,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/obtain-single-approval-instance-details
+Batch Obtain Approval Instance IDs,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/batch-obtain-approval-instance-ids
+CC Instance,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/cc-instance
+Approval Instance Cancel,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/approval-instance-cancel
+Approval Task Approve,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/approval-task-approve
+Approval Task Reject,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/approval-task-reject
+Approval Task Transfer,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-native-approval/approval-task-transfer
+External Approval Create,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/third-party-approval-integration/external-approval-create
+External Approval Instance Create,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/third-party-approval-integration/external-approval-instance-create
+External Approval Instance Check,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/third-party-approval-integration/external-approval-instance-check
+Get Third-party Approval Status,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/third-party-approval-integration/external_status
+Create an Approval Definition,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/feishu-store-app-integration/create-an-approval-definition
+Instance List Query,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/approval-search/instance-list-query
+Cc List Query,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/approval-search/cc-list-query
+Task List Query,/server-docs/approval-v4/approval%EF%BC%88history-version%EF%BC%89/v2/approval-search/task-list-query
+Approval Error Code,/server-docs/approval-v4/approval-error-code
+Obtain Bot Info,/client-docs/bot-v3/obtain-bot-info
+Bot Menu Event,/uAjLw4CM/ukTMukTMukTM/application-v6/bot/events/menu
+Overview,/uAjLw4CM/ukTMukTMukTM/task-v2/overview
+FAQ,/uAjLw4CM/ukTMukTMukTM/task-v2/faq
+Task Feature Overview,/uAjLw4CM/ukTMukTMukTM/task-v2/task/overview
+Create Task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/create
+Get Task Details,/uAjLw4CM/ukTMukTMukTM/task-v2/task/get
+Patch Task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/patch
+Delete Task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/delete
+Add members to task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/add_members
+Remove members from task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/remove_members
+List tasks,/uAjLw4CM/ukTMukTMukTM/task-v2/task/list
+List tasklists of task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/tasklists
+Add task to tasklist,/uAjLw4CM/ukTMukTMukTM/task-v2/task/add_tasklist
+Remove task from tasklist,/uAjLw4CM/ukTMukTMukTM/task-v2/task/remove_tasklist
+Add reminders to task,/uAjLw4CM/ukTMukTMukTM/task-v2/task/add_reminders
+Remove task reminders,/uAjLw4CM/ukTMukTMukTM/task-v2/task/remove_reminders
+Add Dependency,/uAjLw4CM/ukTMukTMukTM/task-v2/task/add_dependencies
+Remove Dependency,/uAjLw4CM/ukTMukTMukTM/task-v2/task/remove_dependencies
+Create Subtask,/uAjLw4CM/ukTMukTMukTM/task-v2/task-subtask/create
+List Subtask,/uAjLw4CM/ukTMukTMukTM/task-v2/task-subtask/list
+Tasklist Features Overview,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/overview
+Create Tasklist,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/create
+Get Tasklist Details,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/get
+Patch Tasklist,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/patch
+Delete Tasklist,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/delete
+Add Tasklist Members,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/add_members
+Remove Tasklist Members,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/remove_members
+Get Tasks of Tasklist,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/tasks
+List Tasklists,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist/list
+Create Activity Subscription,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist-activity_subscription/create
+Get Activity Subscription,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist-activity_subscription/get
+List Activity Subscription,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist-activity_subscription/list
+Patch Activity Subscription,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist-activity_subscription/patch
+Delete Activity Subscription,/uAjLw4CM/ukTMukTMukTM/task-v2/tasklist-activity_subscription/delete
+overview,/uAjLw4CM/ukTMukTMukTM/task-v2/comment/overview
+Create Comment,/uAjLw4CM/ukTMukTMukTM/task-v2/comment/create
+Get Comment,/uAjLw4CM/ukTMukTMukTM/task-v2/comment/get
+Patch Comment,/uAjLw4CM/ukTMukTMukTM/task-v2/comment/patch
+Delete Comment,/uAjLw4CM/ukTMukTMukTM/task-v2/comment/delete
+List Comments,/uAjLw4CM/ukTMukTMukTM/task-v2/comment/list
+Attachment Feature Overview,/uAjLw4CM/ukTMukTMukTM/task-v2/attachment/attachment-feature-overview
+Upload Attachment,/uAjLw4CM/ukTMukTMukTM/task-v2/attachment/upload
+List Attachment,/uAjLw4CM/ukTMukTMukTM/task-v2/attachment/list
+Get Attachment,/uAjLw4CM/ukTMukTMukTM/task-v2/attachment/get
+Delete Attachment,/uAjLw4CM/ukTMukTMukTM/task-v2/attachment/delete
+Section Feature Overview,/uAjLw4CM/ukTMukTMukTM/task-v2/section/section-feature-overview
+Create Section,/uAjLw4CM/ukTMukTMukTM/task-v2/section/create
+Get Section,/uAjLw4CM/ukTMukTMukTM/task-v2/section/get
+Patch Section,/uAjLw4CM/ukTMukTMukTM/task-v2/section/patch
+Delete Section,/uAjLw4CM/ukTMukTMukTM/task-v2/section/delete
+List Section,/uAjLw4CM/ukTMukTMukTM/task-v2/section/list
+List Tasks of Section,/uAjLw4CM/ukTMukTMukTM/task-v2/section/tasks
+Custom Field Overview,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/custom-field-overview
+Create Custom Field,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/create
+Get Custom Field,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/get
+Patch Custom Field,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/patch
+List Custom Field,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/list
+Add Custom Field To Resource,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/add
+Remove Custom Field From Resource,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field/remove
+Create Custom Field Option,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field-option/create
+Patch Custom Field Option,/uAjLw4CM/ukTMukTMukTM/task-v2/custom_field-option/patch
+Create Email Contact,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-mail_contact/create
+Delete Email Contact,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-mail_contact/delete
+Modify Email Contact's Info,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-mail_contact/patch
+List Email Contacts,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-mail_contact/list
+Release Address From Recycle Bin,/server-docs/mail-v1/user_mailbox/delete
+Create A Member's Email Alias,/server-docs/mail-v1/user_mailbox-alias/create
+Delete A Member's Email Alias,/server-docs/mail-v1/user_mailbox-alias/delete
+Obtain All Member's Email Aliases,/server-docs/mail-v1/user_mailbox-alias/list
+Overview,/server-docs/mail-v1/user_mailbox-alias/overview
+Email Address Query,/server-docs/mail-v1/user/query
+Create Email Folder,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-folder/create
+Delete Email Folder,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-folder/delete
+Update Email Folder,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-folder/patch
+List Email Folders,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-folder/list
+list mail of card,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-message/get_by_card
+List Emails,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-message/list
+Get Email Details,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-message/get
+Send Message,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-message/send
+Get Attachment Download Links,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-message-attachment/download_url
+Subscribe Event,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-event/subscribe
+Get Subscription Status,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-event/subscription
+Cancel Subscribe,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-event/unsubscribe
+message received,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-event/events/message_received
+Create Auto FIlter,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-rule/create
+Delete Auto Filter,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-rule/delete
+Update Auto FIlter,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-rule/update
+List Auto FIlters,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-rule/list
+Reorder Auto Filters,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/user_mailbox-rule/reorder
+Create Mail Group,/server-docs/mail-v1/mailgroup/create
+Delete Mail Group,/server-docs/mail-v1/mailgroup/delete
+Modify Some Information Of Mail Group,/server-docs/mail-v1/mailgroup/patch
+Modify All Information Of Mail Group,/server-docs/mail-v1/mailgroup/update
+Query The Specified Mail Group,/server-docs/mail-v1/mailgroup/get
+Obtain Mailing Lists In Batch,/server-docs/mail-v1/mailgroup/list
+Overview,/server-docs/mail-v1/mailgroup/overview
+Create Mailing List Managers In Batch,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-manager/batch_create
+Batch Delete Mail Group Managers,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-manager/batch_delete
+Obtain Mailing List Managers In Batch,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-manager/list
+Create A Mailing List Member,/server-docs/mail-v1/mailgroup-member/create
+Delete A Mailing List Member,/server-docs/mail-v1/mailgroup-member/delete
+Obtain Mailing List Member Information,/server-docs/mail-v1/mailgroup-member/get
+Obtain Mailing List Members In Batch,/server-docs/mail-v1/mailgroup-member/list
+Batch Create Mail Group Members,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-member/batch_create
+Batch Delete Mail Group Members,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-member/batch_delete
+Overview,/server-docs/mail-v1/mailgroup-member/overview
+Create A Mailing List Alias,/server-docs/mail-v1/mailgroup-alias/create
+Delete A Mailing List Alias,/server-docs/mail-v1/mailgroup-alias/delete
+Obtain All Mailing List Aliases,/server-docs/mail-v1/mailgroup-alias/list
+Overview,/server-docs/mail-v1/mailgroup-alias/overview
+Create A Mail Group Permission Member,/server-docs/mail-v1/mailgroup-permission_member/create
+Delete A Mail Group Permission Member,/server-docs/mail-v1/mailgroup-permission_member/delete
+Get A Mail Group Permission Member,/server-docs/mail-v1/mailgroup-permission_member/get
+List Permission Members Of A Mail Group,/server-docs/mail-v1/mailgroup-permission_member/list
+Batch Create Mail Group Permission Members,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-permission_member/batch_create
+Batch Delete Mail Group Permission Members,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/mailgroup-permission_member/batch_delete
+Overview,/server-docs/mail-v1/mailgroup-permission_member/overview
+Create A Public Mailbox,/server-docs/mail-v1/public_mailbox/create
+Modify Some Information Of Public Mailbox,/server-docs/mail-v1/public_mailbox/patch
+Modify All Information Of Public Mailbox,/server-docs/mail-v1/public_mailbox/update
+Query The Specified Public Mailbox,/server-docs/mail-v1/public_mailbox/get
+Check All Public Mailboxes,/server-docs/mail-v1/public_mailbox/list
+Move Public Mailbox To The Recycle Bin,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/public_mailbox/remove_to_recycle_bin
+Permanently Delete Public Mailbox Address,/server-docs/mail-v1/public_mailbox/delete
+Overview,/server-docs/mail-v1/public_mailbox/overview
+Create A Public Mailbox Member,/server-docs/mail-v1/public_mailbox-member/create
+Delete A Public Mailbox Member,/server-docs/mail-v1/public_mailbox-member/delete
+Clear Public Mailbox Members,/server-docs/mail-v1/public_mailbox-member/clear
+Get A Public Mailbox Member,/server-docs/mail-v1/public_mailbox-member/get
+List Public Mailbox Members,/server-docs/mail-v1/public_mailbox-member/list
+Batch Create Public Mailbox Members,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/public_mailbox-member/batch_create
+Batch Delete Public Mailbox Members,/uAjLw4CM/ukTMukTMukTM/reference/mail-v1/public_mailbox-member/batch_delete
+Overview,/server-docs/mail-v1/public_mailbox-member/overview
+Create A Public Mailbox Alias,/server-docs/mail-v1/public_mailbox-alias/create
+Delete A Public Mailbox Alias,/server-docs/mail-v1/public_mailbox-alias/delete
+Obtain All Public Mailbox Aliases,/server-docs/mail-v1/public_mailbox-alias/list
+Overview,/server-docs/mail-v1/public_mailbox-alias/overview
+Get Application Information,/server-docs/application-v6/application/get-2
+Get App Version Information,/server-docs/application-v6/application/get
+Obtain App Version List,/server-docs/application-v6/application/list
+Get the Range of Contacts Data to Access in an App's Version Release Request,/server-docs/application-v6/application/contacts_range_suggest
+Apply for scopes from the admin,/uAjLw4CM/ukTMukTMukTM/application-v6/scope/apply
+Query tenant authorization status,/uAjLw4CM/ukTMukTMukTM/application-v6/scope/list
+Obtain the Apps Installed by an Organization,/server-docs/application-v6/admin/obtain-the-apps-installed-by-an-organization
+Obtain the Apps Available to a User,/server-docs/application-v6/admin/obtain-the-apps-available-to-a-user
+Get Application Release Request List,/server-docs/application-v6/application/underauditlist
+Update version information,/server-docs/application-v6/application/patch
+Update application information,/server-docs/application-v6/application/patch-2
+Get the Range of Contacts Data an App Can Access,/server-docs/application-v6/admin/contacts_range_configuration
+Update the contacts permission scope an app can access,/uAjLw4CM/ukTMukTMukTM/application-v6/application-contacts_range/patch
+Obtain the App Availability in an Organization,/server-docs/application-v6/admin/obtain-the-app-availability-in-an-organization
+Obtain whether user in app visility white or black list,/server-docs/application-v6/admin/check_white_black_list
+Update app availability,/uAjLw4CM/ukTMukTMukTM/application-v6/application-visibility/patch
+Enable or disable application,/uAjLw4CM/ukTMukTMukTM/application-v6/application-management/update
+Verify App Admin,/server-docs/application-v6/admin/verify-app-admin
+Obtain an App Admin’s Management Permissions,/server-docs/application-v6/admin/obtain-an-app-admin%E2%80%99s-management-permissions
+Search App Admin List,/server-docs/application-v6/admin/search-app-admin-list
+Query a User's App Access,/server-docs/application-v6/appstore-paid-info/query-a-user's-app-access
+Query an App Tenant’s Paid Orders,/server-docs/application-v6/appstore-paid-info/query-an-app-tenant%E2%80%99s-paid-orders
+Query Order Information,/server-docs/application-v6/appstore-paid-info/query-order-information
+App Created,/server-docs/application-v6/event/created
+App First Enabled,/server-docs/application-v6/event/app-first-enabled
+App Enabled or Disabled,/server-docs/application-v6/event/app-enabled-or-disabled
+Public App Purchase,/server-docs/application-v6/event/public-app-purchase
+app_ticket Events,/server-docs/application-v6/event/app_ticket-events
+App Uninstalled,/server-docs/application-v6/event/app-uninstalled
+App availability scope extended,/server-docs/application-v6/event/app-availability-scope-extended
+Apply To Publish an Application,/server-docs/application-v6/event/publish_apply
+Withdraw Application Release Application,/server-docs/application-v6/event/publish_revoke
+App has been reviewed,/server-docs/application-v6/event/audit
+Obtain company assign information,/uAjLw4CM/ukTMukTMukTM/tenant-v2/tenant-product_assign_info/query
+Get Tenant Information,/server-docs/tenant-v2/tenant/query
+Function introduction,/server-docs/personal_settings-v1/system_status/overview
+Create system status,/server-docs/personal_settings-v1/system_status/create
+Delete system status,/server-docs/personal_settings-v1/system_status/delete
+Patch system status,/server-docs/personal_settings-v1/system_status/patch
+List system status,/server-docs/personal_settings-v1/system_status/list
+Batch open system status,/server-docs/personal_settings-v1/system_status/batch_open
+Batch close system status,/server-docs/personal_settings-v1/system_status/batch_close
+Identify Japanese driving license in documents,/uAjLw4CM/ukTMukTMukTM/document_ai-v1/jp_driving_license/recognize
+recognize invoice,/uAjLw4CM/ukTMukTMukTM/document_ai-v1/invoice/recognize
+Recognize business cards in pictures,/uAjLw4CM/ukTMukTMukTM/document_ai-v1/business_card/recognize
+Basic Recognition,/server-docs/ai/optical_char_recognition-v1/image/basic_recognize
+Stream Recognition,/server-docs/ai/speech_to_text-v1/speech/stream_recognize
+File Recognition,/server-docs/ai/speech_to_text-v1/speech/file_recognize
+Text Translation,/server-docs/ai/translation-v1/text/translate
+Language Recognition,/server-docs/ai/translation-v1/text/detect
+reset user enterprise email password,/server-docs/admin-v1/password/reset
+Obtain active users and function usage data in the department dimension,/server-docs/admin-v1/admin_dept_stat/list
+Obtain active users and function usage data in the user dimension,/server-docs/admin-v1/admin_user_stat/list
+Function introduction,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge/quick-start
+Create a badge,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge/create
+Modify the badge information,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge/update
+Upload a badge image,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge_image/create
+Get a list of badges,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge/list
+Get the badge detail,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge/get
+Create a grant list,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge-grant/create
+Delete the grant list,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge-grant/delete
+Modify the grant list,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge-grant/update
+List of grants to receive badge,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge-grant/list
+Get the grant list detail,/uAjLw4CM/ukTMukTMukTM/reference/admin-v1/badge-grant/get
+Overview,/server-docs/admin-v1/admin_dept_stat/overview
+Overview,/server-docs/admin-v1/admin_user_stat/overview
+OKR Development Guide,/server-docs/okr-v1/okr-guide
+Get OKR Period List,/server-docs/okr-v1/period/list
+Batch Get OKR,/server-docs/okr-v1/okr/batch_get
+Get User OKR List,/server-docs/okr-v1/user-okr/list
+Delete OKR progress,/server-docs/okr-v1/progress_record/delete
+Update OKR progress,/server-docs/okr-v1/progress_record/update
+Get OKR progress records,/server-docs/okr-v1/progress_record/get
+Create OKR progress record,/server-docs/okr-v1/progress_record/create
+Upload progress record image,/server-docs/okr-v1/image/upload
+Obtain OpenAPI audit log,/uAjLw4CM/ukTMukTMukTM/security_and_compliance-v1/openapi_log/list_data
+export app dlp execute log,/uAjLw4CM/ukTMukTMukTM/security_and_compliance-v1/app_dlp_execute_log/list
+Function introduction,/ukTMukTMukTM/uQjM5YjL0ITO24CNykjN/audit_log/
+Get behavior audit log,/ukTMukTMukTM/uQjM5YjL0ITO24CNykjN/audit_log/audit_data_get
+List of enumerated values,/ukTMukTMukTM/uQjM5YjL0ITO24CNykjN/audit_log/appendix
+Overview,/server-docs/security_and_compliance-v1/user_migration/overview
+Get a list of geographic locations,/server-docs/security_and_compliance-v1/user_migration/get
+Migrate users,/server-docs/security_and_compliance-v1/user_migration/create
+Get user migration status,/server-docs/security_and_compliance-v1/user_migration/get-2
+Get user migration status in batches,/server-docs/security_and_compliance-v1/user_migration/search
+Cancel user migration,/server-docs/security_and_compliance-v1/user_migration/cancel
+Download minutes audio or video file,/uAjLw4CM/ukTMukTMukTM/minutes-v1/minute-media/get
+Export minutes transcript,/uAjLw4CM/ukTMukTMukTM/minutes-v1/minute-transcript/get
+Get minutes statistics,/server-docs/minutes-v1/minute-statistics/get
+Get minutes meta,/server-docs/minutes-v1/minute/get
+Search Workplace Access Data,/uAjLw4CM/ukTMukTMukTM/workplace-v1/workplace_access_data/search
+Get Custom Workplace Access Data,/uAjLw4CM/ukTMukTMukTM/workplace-v1/custom_workplace_access_data/search
+Get Block Access Data,/uAjLw4CM/ukTMukTMukTM/workplace-v1/workplace_block_access_data/search
+code2session,/client-docs/gadget/-web-app-api/open-ability/login/code2session
+Obtain user_access_token (h5),/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/access_token/create
+Obtain code,/server-docs/getting-started/authen-v1/api/request-authentication
+Refresh user_access_token,/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/refresh_access_token/create
+Update the Availability of an App,/server-docs/application-v6/admin/update-the-availability-of-an-app
+Get User List,/server-docs/historic-version//user/list
+Batch Obtain User Information,/server-docs/historic-version//user/batch-obtain-user-information
+Obtain a Department User List,/server-docs/historic-version//user/obtain-a-department-user-list
+Obtain Department User Details,/server-docs/historic-version//user/obtain-department-user-details
+Add a User,/server-docs/historic-version//user/add-a-user
+Delete a User,/server-docs/historic-version//user/delete-a-user
+Update a User’s Information,/server-docs/historic-version//user/update-a-user%E2%80%99s-information
+Obtain a Role List,/server-docs/historic-version//user/obtain-a-role-list
+Obtain a List of Role Members,/server-docs/historic-version//user/obtain-a-list-of-role-members
+Get User IDs Using Email Addresses or Mobile Numbers,/server-docs/historic-version//user/get-user-ids-using-email-addresses-or-mobile-numbers
+Get User IDs Using Union IDs,/server-docs/historic-version//user/get-user-ids-using-union-ids
+Obtain Department Details,/server-docs/historic-version//department/obtain-department-details
+Get Department Information List,/server-docs/historic-version//department/list
+Obtain a Sub-department ID List,/server-docs/historic-version//department/obtain-a-sub-department-id-list
+Obtain a Sub-department List,/server-docs/historic-version//department/obtain-a-sub-department-list
+Batch Obtain Department Details,/server-docs/historic-version//department/batch-obtain-department-details
+Add a Department,/server-docs/historic-version//department/add-a-department
+Delete a Department,/server-docs/historic-version//department/delete-a-department
+Update Department Information,/server-docs/historic-version//department/update-department-information
+Batch Add Departments,/server-docs/historic-version//import-api/batch-add-departments
+Batch Add Users,/server-docs/historic-version//import-api/batch-add-users
+Query the Execution Status of a Batch Task,/server-docs/historic-version//import-api/query-the-execution-status-of-a-batch-task
+Obtain Custom User Properties,/server-docs/historic-version//obtain-custom-user-properties
+Obtain the Contacts Permission Scope,/server-docs/historic-version//obtain-the-contacts-permission-scope
+user status changed,/server-docs/historic-version//event/user-status-changed
+employee change,/server-docs/historic-version//event/employee-change
+department update,/server-docs/historic-version//event/department-update
+scope change,/server-docs/historic-version//event/scope-change
+Contacts Events,/server-docs/historic-version//contacts-events
+Guide,/server-docs/docs/docs/docx-v1/guide
+Data Structure,/server-docs/docs/docs/docx-v1/docx-structure
+Overview,/server-docs/docs/docs/docs/docs-doc-overview
+Getting Started with Docs API,/server-docs/docs/docs/docs/getting-start
+Document Structure Introduction,/server-docs/docs/docs/docs/document-structure-introduction
+Document Structure Reference,/server-docs/docs/docs/docs/document-structure-reference
+Create Document,/server-docs/docs/docs/docs/apiRef/create-document
+Obtain Document Meta,/server-docs/docs/docs/docs/apiRef/history-documents/obtain-document-meta
+Obtain sheet meta info in doc,/server-docs/docs/docs/docs/apiRef/history-documents/obtain-sheet-meta-info-in-doc
+Obtain Document Content,/server-docs/docs/docs/docs/content/obtain-document-content
+Get Document,/server-docs/docs/docs/docs/content/get-document
+Batch Update Document,/server-docs/docs/docs/docs/content/batch-update-document
+Import Spreadsheet,/server-docs/historic-version/docs/sheets/sheet-operation/import-spreadsheet
+Query Import Results,/server-docs/historic-version/docs/sheets/sheet-operation/query-import-results
+Querying if a Collaborator Has a Specific Permission,/server-docs/docs/drive-v1/permission/permission-member/querying-if-a-collaborator-has-a-specific-permission
+Create a New Folder,/server-docs/docs/drive-v1/folder/create-a-new-folder
+Get Folder Children,/server-docs/docs/drive-v1/folder/get-folder-children
+Copy a Doc or Sheet,/server-docs/docs/drive-v1/file/copy-a-doc-or-sheet
+Delete a Doc,/server-docs/docs/drive-v1/file/delete-a-doc
+Delete a Sheet,/server-docs/docs/drive-v1/file/delete-sheet
+Obtain Metadata,/server-docs/docs/drive-v1/file/obtain-metadata
+Add a Whole Document Comment,/server-docs/historic-version/docs/drive/post-revisions/add-a-whole-document-comment
+Query Meeting Room Customization Setting,/server-docs/meeting_room-v1/api-reference/query-meeting-room-customization-setting
+Obtain Building List,/server-docs/meeting_room-v1/api-reference/obtain-building-list
+Query building details,/server-docs/meeting_room-v1/api-reference/query-building-details
+Obtain meeting room list,/server-docs/meeting_room-v1/api-reference/obtain-meeting-room-list
+Query Meeting Room Details,/server-docs/meeting_room-v1/api-reference/query-meeting-room-details
+Create Building,/server-docs/meeting_room-v1/api-reference/create-building
+Update building,/server-docs/meeting_room-v1/api-reference/update-building
+Delete Building,/server-docs/meeting_room-v1/api-reference/delete-building
+Obtain Building ID,/server-docs/meeting_room-v1/api-reference/obtain-building-id
+Create Meeting Room,/server-docs/meeting_room-v1/api-reference/create-meeting-room
+Update Meeting Room,/server-docs/meeting_room-v1/api-reference/update-meeting-room
+Delete Meeting Room,/server-docs/meeting_room-v1/api-reference/delete-meeting-room
+Obtain Meeting Room ID,/server-docs/meeting_room-v1/api-reference/obtain-meeting-room-id
+Obtain Country/Region List,/server-docs/meeting_room-v1/api-reference/obtain-country/region-list
+Obtain City List,/server-docs/meeting_room-v1/api-reference/obtain-city-list
+Meeting room created,/server-docs/meeting_room-v1/event/created
+Meeting Room Updated,/server-docs/meeting_room-v1/event/updated
+Meeting Room Deleted,/server-docs/meeting_room-v1/event/deleted
+Error Codes,/server-docs/meeting_room-v1/error-codes
+Rooms configuration overview,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_config/rooms-configuration-overview
+set_checkboard_access_code,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_config/set_checkboard_access_code
+set_room_access_code,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_config/set_room_access_code
+Query meeting room configuration,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_config/query
+Set up meeting room configuration,/uAjLw4CM/ukTMukTMukTM/reference/vc-v1/room_config/set
+Send Message Card,/server-docs/historic-version/im-chat/message/send-message/send-message-card
+Send Text Message,/server-docs/historic-version/im-chat/message/send-message/send-text-message
+Send Image Message,/server-docs/historic-version/im-chat/message/send-message/send-image-message
+Send Post Message,/server-docs/historic-version/im-chat/message/send-message/send-post-message
+Send Share Group Message,/server-docs/historic-version/im-chat/message/send-message/send-share-group-message
+Recall Message,/server-docs/historic-version/im-chat/message/send-message/recall-message
+Query the Read Status of a Message,/server-docs/historic-version/im-chat/message/send-message/query-the-read-status-of-a-message
+Upload Image,/server-docs/historic-version/im-chat/message/images/upload-image
+Get Image,/server-docs/historic-version/im-chat/message/images/get-image
+Get File,/server-docs/historic-version/im-chat/message/files/get-file
+Events,/server-docs/historic-version/im-chat/message/events
+Create Group,/server-docs/historic-version/im-chat/group-chat/create-group
+Obtain Group Info,/server-docs/historic-version/im-chat/group-chat/obtain-group-info
+Update Group Info,/server-docs/historic-version/im-chat/group-chat/update-group-info
+Disband Chat,/server-docs/historic-version/im-chat/group-chat/disband-chat
+Invite Users to Chat,/server-docs/historic-version/im-chat/group-chat/invite-users-to-a-group-chat
+Delete Users From Chat,/server-docs/historic-version/im-chat/group-chat/delete-users-from-chat
+Add Bot to Group,/server-docs/historic-version/im-chat/group-chat/add-bot-to-group
+Exit Bot From Group,/server-docs/historic-version/im-chat/group-chat/exit-bot-from-group
+Obtain Member List,/server-docs/historic-version/im-chat/group-chat/obtain-member-list
+Obtain Group List to Which User Belongs,/server-docs/historic-version/im-chat/group-chat/obtain-group-list-to-which-user-belongs
+Obtain Group List to Which Bot Belongs,/server-docs/historic-version/im-chat/group-chat/obtain-group-list-to-which-bot-belongs
+Search All Groups to Which User Belongs,/server-docs/historic-version/im-chat/group-chat/search-all-groups-to-which-user-belongs
+Events,/server-docs/historic-version/im-chat/group-chat/events

@@ -8,6 +8,8 @@ import { getOAuthConfig } from "../service/loginUser/OAuthConfig.js";
 export function registerTestLarkApiTool(server) {
   server.tool(
     "test_lark_api",
+    `Test Lark's actual API calls. To use this tool, you need to know about how API works and how to make the API calls.
+    To learn about the API, you can use the 'fetch_lark_doc_index' tool to learn about the API specification.`,
     {
       endpoint: z
         .string()
@@ -21,8 +23,26 @@ export function registerTestLarkApiTool(server) {
         .any()
         .optional()
         .describe("Request body for POST/PUT requests (JSON object)"),
+      iKnewTheApiSpec: z
+        .boolean()
+        .optional()
+        .default(false)
+        .describe(
+          "Set to true to confirm that you learned about the API specification via fetch_lark_doc_index or you already have correct knowledge about the API. For the first call, please set it to false.",
+        ),
     },
-    async ({ endpoint, method = "GET", body }) => {
+    async ({ endpoint, method = "GET", body, iKnewTheApiSpec = false }) => {
+      if (!iKnewTheApiSpec) {
+        return {
+          isError: true,
+          content: [
+            {
+              type: "text",
+              text: "Have you learned about the API specification via fetch_lark_doc_index? If not, please use the 'fetch_lark_doc_index' tool to learn about the API specification first. If you already have correct knowledge about the API, please set iKnewTheApiSpec to true.",
+            },
+          ],
+        };
+      }
       let token = null;
       let tokenType = null;
       if (global.larkUserAccessToken) {
