@@ -6,7 +6,7 @@ export function getOAuthConfig() {
   return {
     app_id: process.env.LARK_APP_ID || "YOUR_APP_ID",
     app_secret: process.env.LARK_APP_SECRET || "YOUR_APP_SECRET",
-    redirect_uri: "http://localhost:14514",
+    redirect_uri: process.env.REDIRECT_URL || "http://localhost:14514",
     port: 14514,
     origin, // "lark" or "feishu"
   };

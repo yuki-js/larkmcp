@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: larkmcp
+  namespace: larkmcp
+  labels:
+    app: larkmcp
+    component: larkmcp
+    name: larkmcp
+    environment: production
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: larkmcp
+      component: larkmcp
+  template:
+    metadata:
+      labels:
+        app: larkmcp
+        component: larkmcp
+        name: larkmcp
+        environment: production
+    spec:
+      imagePullSecrets:
+        - name: github-registry-secret
+      containers:
+        - name: larkmcp
+          image: ghcr.io/yuki-js/larkmcp:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: larkmcp
+  namespace: larkmcp
+  labels:
+    app: larkmcp
+    component: larkmcp
+    name: larkmcp
+    environment: production
+spec:
+  type: ClusterIP
+  selector:
+    app: larkmcp
+    component: larkmcp
+  ports:
+    - port: 80
+      targetPort: 3000

@@ -22,7 +22,7 @@ export class OAuthHttpServer {
     if (this.server) await this.stop();
     this.server = http.createServer((req, res) => {
       try {
-        const url = new URL(req.url, `http://localhost:${this.port}`);
+        const url = new URL(req.url);
         const code = url.searchParams.get("code");
         if (code) {
           this.onRequest({ code });

@@ -1,0 +1,4 @@
+resources:
+  - larkmcp.yaml
+  - ingress.yaml
+namespace: larkmcp
