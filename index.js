@@ -1,4 +1,8 @@
 #!/usr/bin/env node
-import { startServer } from "./server/mcpServer.js";
 
-await startServer();
+async function main() {
+  const { startStdioServer } = await import("./server/stdioTransport.js");
+  await startStdioServer();
+}
+
+await main();
