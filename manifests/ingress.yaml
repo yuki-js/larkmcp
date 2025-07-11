@@ -17,6 +17,13 @@ spec:
     - host: larkmcp.ouchiserver.aokiapp.com
       http:
         paths:
+          - path: /oacb
+            pathType: Prefix
+            backend:
+              service:
+                name: larkmcp
+                port:
+                  number: 14514
           - path: /
             pathType: Prefix
             backend:

@@ -22,7 +22,7 @@ export class OAuthHttpServer {
     if (this.server) await this.stop();
     this.server = http.createServer((req, res) => {
       try {
-        const url = new URL(req.url);
+        const url = new URL(req.url, `http://localhost:${this.port}`);
         const code = url.searchParams.get("code");
         if (code) {
           this.onRequest({ code });
@@ -38,9 +38,14 @@ export class OAuthHttpServer {
           res.end("<html><body><h2>Missing code parameter.</h2></body></html>");
         }
       } catch (err) {
+        console.error("OAuthHttpServer error:", err);
         this.onRequest({ error: err });
         res.writeHead(500, { "Content-Type": "text/html" });
-        res.end("<html><body><h2>Internal server error.</h2></body></html>");
+        res.end(
+          "<html><body><h2>Internal server error.</h2><p>" +
+            err.toString() +
+            "</p></body></html>",
+        );
       }
     });
     this.server.on("error", (err) => {

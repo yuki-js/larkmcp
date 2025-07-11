@@ -28,7 +28,39 @@ spec:
         - name: larkmcp
           image: ghcr.io/yuki-js/larkmcp:latest
           ports:
-            - containerPort: 80
+            - containerPort: 3000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
+          env:
+            - name: LARK_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: larkmcp-oauth-secret
+                  key: app_id
+            - name: LARK_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: larkmcp-oauth-secret
+                  key: app_secret
+            - name: MCP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: larkmcp-oauth-secret
+                  key: mcp_secret
+            - name: REDIRECT_URL
+              value: "https://larkmcp.ouchiserver.aokiapp.com/oacb"
           resources:
             requests:
               memory: "256Mi"
@@ -53,5 +85,9 @@ spec:
     app: larkmcp
     component: larkmcp
   ports:
-    - port: 80
+    - name: http
+      port: 80
       targetPort: 3000
+    - name: oauth-callback
+      port: 14514
+      targetPort: 14514

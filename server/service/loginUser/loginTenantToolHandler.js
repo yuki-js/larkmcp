@@ -73,7 +73,6 @@ export async function loginTenantHandler() {
       {
         type: "text",
         text: JSON.stringify({
-          tenant_access_token: json.tenant_access_token,
           expire: json.expire,
           apiUrl: url,
         }),

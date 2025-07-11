@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "larkmcp-http": {
+      "url": "https://larkmcp.ouchiserver.aokiapp.com/8J1srPtbsyltQMFQWBhEm1iutbnHR7x4_/mcp",
+      "type": "http"
+    }
+  },
+  "inputs": []
+}

@@ -115,7 +115,6 @@ export async function loginUserPollHandler() {
       {
         type: "text",
         text: JSON.stringify({
-          ...tokenResult,
           message: "Successfully obtained user_access_token.",
         }),
       },
