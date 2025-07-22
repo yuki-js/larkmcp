@@ -11,12 +11,13 @@ on:
       - "package.json"
       - "package-lock.json"
 
+permissions:
+  packages: write
+  contents: read
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
