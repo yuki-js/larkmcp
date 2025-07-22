@@ -38,9 +38,14 @@ export class OAuthHttpServer {
           res.end("<html><body><h2>Missing code parameter.</h2></body></html>");
         }
       } catch (err) {
+        console.error("OAuthHttpServer error:", err);
         this.onRequest({ error: err });
         res.writeHead(500, { "Content-Type": "text/html" });
-        res.end("<html><body><h2>Internal server error.</h2></body></html>");
+        res.end(
+          "<html><body><h2>Internal server error.</h2><p>" +
+            err.toString() +
+            "</p></body></html>",
+        );
       }
     });
     this.server.on("error", (err) => {

@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: larkmcp
+  namespace: larkmcp
+  labels:
+    environment: production
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: letsencrypt-cloudflare
+spec:
+  tls:
+    - hosts:
+        - "larkmcp.ouchiserver.aokiapp.com"
+      secretName: service-tls
+  rules:
+    - host: larkmcp.ouchiserver.aokiapp.com
+      http:
+        paths:
+          - path: /oacb
+            pathType: Prefix
+            backend:
+              service:
+                name: larkmcp
+                port:
+                  number: 14514
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: larkmcp
+                port:
+                  number: 80

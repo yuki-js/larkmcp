@@ -1,0 +1,93 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: larkmcp
+  namespace: larkmcp
+  labels:
+    app: larkmcp
+    component: larkmcp
+    name: larkmcp
+    environment: production
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: larkmcp
+      component: larkmcp
+  template:
+    metadata:
+      labels:
+        app: larkmcp
+        component: larkmcp
+        name: larkmcp
+        environment: production
+    spec:
+      imagePullSecrets:
+        - name: github-registry-secret
+      containers:
+        - name: larkmcp
+          image: ghcr.io/yuki-js/larkmcp:latest
+          ports:
+            - containerPort: 3000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
+          env:
+            - name: LARK_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: larkmcp-oauth-secret
+                  key: app_id
+            - name: LARK_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: larkmcp-oauth-secret
+                  key: app_secret
+            - name: MCP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: larkmcp-oauth-secret
+                  key: mcp_secret
+            - name: REDIRECT_URL
+              value: "https://larkmcp.ouchiserver.aokiapp.com/oacb"
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: larkmcp
+  namespace: larkmcp
+  labels:
+    app: larkmcp
+    component: larkmcp
+    name: larkmcp
+    environment: production
+spec:
+  type: ClusterIP
+  selector:
+    app: larkmcp
+    component: larkmcp
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+    - name: oauth-callback
+      port: 14514
+      targetPort: 14514

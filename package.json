@@ -1,6 +1,6 @@
 {
   "name": "@yuki-js/larkmcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "bin": {
     "larkmcp": "./index.js"
@@ -41,7 +41,10 @@
     "node": ">=22"
   },
   "dependencies": {
+    "@hono/node-server": "^1.15.0",
     "@modelcontextprotocol/sdk": "^1.11.0",
+    "fetch-to-node": "^2.1.0",
+    "hono": "^4.8.4",
     "zod": "^3.24.3"
   },
   "devDependencies": {
